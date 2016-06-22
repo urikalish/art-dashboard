@@ -1,0 +1,21 @@
+{
+  "name": "art-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Art Dashboard",
+  "keywords": [
+    "art",
+    "dashboard"
+  ],
+  "author": "Uri Kalish",
+  "scripts": {
+    "start": "node art-dash-server/art-dash-server.js"
+  },
+  "dependencies": {
+    "express": "~4.13.4",
+    "body-parser": "~1.15.1",
+    "request": "~2.72.0",
+    "cookie": "~0.2.3",
+    "request-debug": "~0.2.0"
+  }
+}

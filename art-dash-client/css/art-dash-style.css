@@ -1,0 +1,75 @@
+@keyframes delayed-fade-in-animation {
+	0% {
+		opacity: 0;
+		display: none;
+	}
+	50% {
+		opacity: 0;
+		display: block;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes delayed-fade-out-animation {
+	0% {
+		opacity: 1;
+		display: block;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}
+
+.visibility--hidden {
+	visibility: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color: #fff;
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.art-dash-main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative
+}
+
+.art-dash-image-container {
+	background: #000;
+	width: calc(100% - 200px);
+	height: calc(100% - 200px);
+	text-align: center;
+}
+
+.art-dash-image {
+	max-width: 100%;
+	max-height: calc(100% - 40px);
+}
+
+.art-dash-info-container {
+	height: 40px;
+	padding-top: 10px;
+}

@@ -1,0 +1,27 @@
+<html ng-app="artDashApp">
+	<head>
+		<title>Art Dashboard</title>
+		<meta name="description" content="Art Dashboard"/>
+		<link rel="stylesheet" type="text/css" href="css/art-dash-style.css"/>
+		<script src="lib/lodash.js"></script>
+		<script src="lib/jquery-2.2.4.min.js"></script>
+		<script src="lib/angular.min.js"></script>
+		<script src="js/art-dash-main-app.js"></script>
+		<script src="js/art-dash-consts.js"></script>
+		<script src="js/art-dash-vars.js"></script>
+		<script src="js/art-dash-comm-serv.js"></script>
+		<script src="js/art-dash-main-serv.js"></script>
+		<script src="js/art-dash-main-ctrl.js"></script>
+	</head>
+	<body ng-controller="artDashCtrl">
+	    <div class="art-dash-main">
+			<div class="art-dash-image-container">
+				<img id="art-dash-image" class="art-dash-image"/>
+				<div class="art-dash-info-container">
+					{{model.artworkInfo}}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
