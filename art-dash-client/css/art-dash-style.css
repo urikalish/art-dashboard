@@ -52,16 +52,18 @@ body {
 
 .art-dash-image {
 	max-width: 100%;
-	max-height: calc(100% - 100px);
+	max-height: calc(100% - 40px);
 	outline: 1px solid #fff;
 }
 
 .art-dash-artwork-info-container {
 	height: 40px;
 	line-height: 40px;
+	color: #666;
 }
 
 .art-dash-data-info-container {
-    height: 60px;
-	line-height: 60px;
+	margin-top: 20px;
+	height: 40px;
+	line-height: 40px;
 }
