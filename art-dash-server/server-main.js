@@ -1,8 +1,10 @@
 var http = require('http');
 var bodyParser = require('body-parser');
 var express = require('express');
-var artDashConfig = require('./art-dash-config.js').artDashConfig;
-var artDashDataProvider = require('./art-dash-data-provider.js').artDashDataProvider;
+var artDashConfig = require('./server-config.js').artDashConfig;
+var artDashItems = require('./items.js').items;
+var artDashDataProvider = require('./data-provider.js').artDashDataProvider;
+var artDashArtProvider = require('./art-provider.js').artDashArtProvider;
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,10 +15,15 @@ app.use('/' + artDashConfig.STATIC_DIR, express.static(__dirname + '/../art-dash
 
 //HTTP POST
 app.post('/api', function(req, res) {
+	var index, item, data, response, responseDataJson;
 	console.log('--------------------------------------------------------------------------------');
-	var imageIndex = req.body.imageIndex;
-	console.log('Server API call. imageIndex: ' + imageIndex);
-  var responseDataJson = artDashDataProvider.getData(imageIndex);
+	index = req.body.index;
+	console.log('Server API call. index: ' + index);
+  item = artDashItems[index % artDashItems.length];
+	response = {};
+	artDashDataProvider.getData(item, response);
+	artDashArtProvider.getArt(item, response);
+	responseDataJson = JSON.stringify(response);
 	console.log('--------------------------------------------------------------------------------');
 	res.end(responseDataJson);
 });

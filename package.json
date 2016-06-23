@@ -9,7 +9,7 @@
   ],
   "author": "Uri Kalish",
   "scripts": {
-    "start": "node art-dash-server/art-dash-server.js"
+    "start": "node art-dash-server/server-main.js"
   },
   "dependencies": {
     "express": "~4.13.4",
