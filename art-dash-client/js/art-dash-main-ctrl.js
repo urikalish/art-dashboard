@@ -11,10 +11,12 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
   }
 
   function handleServerResponse(responseData) {
+    var i = $scope.model.imageIndex % 2;
+    $scope.model.imageSrc[i] = artDashConstants.url.artBase + '/' + responseData.imagePath;
+    $scope.model.imageVisibility[i] = true;
+    $scope.model.imageVisibility[i*-1 + 1] = false;
     $scope.model.dataInfo = responseData.dataString;
     $scope.model.artInfo = responseData.artworkName + ' - ' + responseData.artistName + ', ' + responseData.artworkYear;
-    var imgCtrl = $('#' + artDashConstants.ctrlId.IMAGE)[0];
-    imgCtrl.src = artDashConstants.url.artBase + '/' + responseData.imagePath;
     $scope.model.imageIndex++;
     scheduleGetData();
   }
@@ -22,7 +24,9 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
   $scope.model = {
     imageIndex: 0,
     dataInfo: '',
-    artInfo: ''
+    artInfo: '',
+    imageSrc: ['', ''],
+    imageVisibility: [false, false]
   };
 
   getData();

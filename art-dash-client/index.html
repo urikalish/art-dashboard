@@ -16,7 +16,8 @@
 	<body ng-controller="artDashCtrl">
 	    <div class="art-dash-main">
 			<div class="art-dash-image-container">
-				<img id="art-dash-image" class="art-dash-image"/>
+				<img ng-show="model.imageVisibility[0]" class="art-dash-image" ng-src="{{model.imageSrc[0]}}"/>
+				<img ng-show="model.imageVisibility[1]" class="art-dash-image" ng-src="{{model.imageSrc[1]}}"/>
 				<div class="art-dash-data-info-container">
 					{{model.artInfo}}
 				</div>
