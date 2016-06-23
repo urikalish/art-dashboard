@@ -8,7 +8,7 @@ var artDashDataProvider = {
 
     var responseData = {
       imageIndex: imageIndex,
-      dataString: '78 story points left in the feature',
+      dataString: '42 story points left in the feature',
       dataNumber: -1,
       artistName: artwork.artistName,
       artworkName: artwork.artworkName,
