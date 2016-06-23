@@ -71,10 +71,15 @@ body {
 
 .art-dash-image {
 	max-width: 100%;
-	max-height: calc(100% - 40px);
+	max-height: calc(100% - 80px);
 }
 
-.art-dash-info-container {
+.art-dash-art-info-container {
 	height: 40px;
+	line-height: 40px;
+}
+
+.art-dash-data-info-container {
+    height: 40px;
 	line-height: 40px;
 }
