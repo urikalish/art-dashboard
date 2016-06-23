@@ -33,7 +33,7 @@ body {
 	font-size: 20px;
 }
 
-.art-dash-main {
+.art-dash__main {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -42,28 +42,52 @@ body {
 	position: relative
 }
 
-.art-dash-container {
+.art-dash__container {
 	background: #222;
 	width: calc(100% - 200px);
 	height: calc(100% - 200px);
-	text-align: center;
 	transition: all 1.5s ease;
+	display: flex;
 }
 
-.art-dash-image {
+.artwork {
+	height: 100%;
+	flex: 1 1 auto;
+	max-width: calc(100% - 400px);
+}
+
+.artwork__image {
 	max-width: 100%;
-	max-height: calc(100% - 40px);
+	max-height: 100%;
 	outline: 1px solid #fff;
 }
 
-.art-dash-artwork-info-container {
+.artwork__info {
 	height: 40px;
 	line-height: 40px;
 	color: #666;
 }
 
-.art-dash-data-info-container {
-	margin-top: 20px;
-	height: 40px;
+.data {
+	flex: 0 0 400px;
+	position: relative;
+}
+
+.data__1 {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	font-size: 200px;
+	line-height: 200px;
+	word-break: break-all;
+	color: #666;
+}
+
+.data__2 {
+	position: absolute;
+	top: 220px;
+	left: 160px;
+	font-size: 40px;
 	line-height: 40px;
+	color: #fff;
 }
