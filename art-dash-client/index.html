@@ -15,13 +15,13 @@
 	</head>
 	<body ng-controller="artDashCtrl">
 	    <div class="art-dash-main">
-			<div class="art-dash-art-container" ng-class="{'opacity--1':model.showArt, 'opacity--0':!model.showArt}">
-				<img ng-show="model.imageVisibility[0]" class="art-dash-image" ng-src="{{model.imageSrc[0]}}"/>
-				<img ng-show="model.imageVisibility[1]" class="art-dash-image" ng-src="{{model.imageSrc[1]}}"/>
-				<div class="art-dash-data-info-container">
+			<div class="art-dash-container" ng-class="{'opacity--1':model.showArt, 'opacity--0':!model.showArt}">
+				<img ng-show="model.imageIsVisibile[0]" class="art-dash-image" ng-src="{{model.imageSrc[0]}}"/>
+				<img ng-show="model.imageIsVisibile[1]" class="art-dash-image" ng-src="{{model.imageSrc[1]}}"/>
+				<div class="art-dash-artwork-info-container">
 					{{model.artInfo}}
 				</div>
-				<div class="art-dash-art-info-container">
+				<div class="art-dash-data-info-container">
 					{{model.dataInfo}}
 				</div>
 			</div>

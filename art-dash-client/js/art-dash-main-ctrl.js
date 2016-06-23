@@ -15,14 +15,14 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
     $timeout(function() {
       var i = $scope.model.imageIndex % 2;
       $scope.model.imageSrc[i] = artDashConstants.url.artBase + '/' + responseData.imagePath;
-      $scope.model.imageVisibility[i] = true;
-      $scope.model.imageVisibility[i*-1 + 1] = false;
+      $scope.model.imageIsVisibile[i] = true;
+      $scope.model.imageIsVisibile[i*-1 + 1] = false;
       $scope.model.dataInfo = responseData.dataString;
       $scope.model.artInfo = responseData.artworkName + ' - ' + responseData.artistName + ', ' + responseData.artworkYear;
       $scope.model.showArt = true;
       $scope.model.imageIndex++;
       scheduleGetData();
-    }, 2000);
+    }, 1500);
   }
 
   $scope.model = {
@@ -31,7 +31,7 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
     dataInfo: '',
     artInfo: '',
     imageSrc: ['', ''],
-    imageVisibility: [false, false]
+    imageIsVisibile: [false, false]
   };
 
   getData();

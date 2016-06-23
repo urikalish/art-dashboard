@@ -11,15 +11,6 @@
 	opacity: 1;
 }
 
-.fade-animation.ng-enter,
-.fade-animation.ng-leave.ng-leave-active {
-	opacity: 0;
-}
-.fade-animation.ng-enter.ng-enter-active,
-.fade-animation.ng-leave {
-	opacity: 1;
-}
-
 .visibility--hidden {
 	visibility: hidden;
 }
@@ -51,25 +42,26 @@ body {
 	position: relative
 }
 
-.art-dash-art-container {
+.art-dash-container {
 	background: #222;
 	width: calc(100% - 200px);
 	height: calc(100% - 200px);
 	text-align: center;
-	transition: all 2s ease;
+	transition: all 1.5s ease;
 }
 
 .art-dash-image {
 	max-width: 100%;
-	max-height: calc(100% - 80px);
+	max-height: calc(100% - 100px);
+	outline: 1px solid #fff;
 }
 
-.art-dash-art-info-container {
+.art-dash-artwork-info-container {
 	height: 40px;
 	line-height: 40px;
 }
 
 .art-dash-data-info-container {
-    height: 40px;
-	line-height: 40px;
+    height: 60px;
+	line-height: 60px;
 }
