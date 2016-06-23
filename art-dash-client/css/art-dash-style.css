@@ -3,32 +3,21 @@
 	src: url('itc-eras-light.woff') format('woff');
 }
 
-@keyframes delayed-fade-in-animation {
-	0% {
-		opacity: 0;
-		display: none;
-	}
-	50% {
-		opacity: 0;
-		display: block;
-	}
-	100% {
-		opacity: 1;
-	}
+.opacity--0 {
+	opacity: 0;
 }
 
-@keyframes delayed-fade-out-animation {
-	0% {
-		opacity: 1;
-		display: block;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-		display: none;
-	}
+.opacity--1 {
+	opacity: 1;
+}
+
+.fade-animation.ng-enter,
+.fade-animation.ng-leave.ng-leave-active {
+	opacity: 0;
+}
+.fade-animation.ng-enter.ng-enter-active,
+.fade-animation.ng-leave {
+	opacity: 1;
 }
 
 .visibility--hidden {
@@ -62,11 +51,12 @@ body {
 	position: relative
 }
 
-.art-dash-image-container {
+.art-dash-art-container {
 	background: #222;
 	width: calc(100% - 200px);
 	height: calc(100% - 200px);
 	text-align: center;
+	transition: all 2s ease;
 }
 
 .art-dash-image {
