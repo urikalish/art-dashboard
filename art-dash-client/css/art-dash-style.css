@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "ITC Eras Light";
+	src: url('itc-eras-light.woff') format('woff');
+}
+
 @keyframes delayed-fade-in-animation {
 	0% {
 		opacity: 0;
@@ -42,10 +47,10 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: #000;
+	background: #222;
 	color: #fff;
-	font-family: helvetica, sans-serif;
-	font-size: 16px;
+	font-family: "ITC Eras Light", helvetica, sans-serif;
+	font-size: 20px;
 }
 
 .art-dash-main {
@@ -58,7 +63,7 @@ body {
 }
 
 .art-dash-image-container {
-	background: #000;
+	background: #222;
 	width: calc(100% - 200px);
 	height: calc(100% - 200px);
 	text-align: center;
@@ -71,5 +76,5 @@ body {
 
 .art-dash-info-container {
 	height: 40px;
-	padding-top: 10px;
+	line-height: 40px;
 }
