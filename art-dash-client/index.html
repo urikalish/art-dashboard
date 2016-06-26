@@ -16,13 +16,9 @@
 	<body ng-controller="artDashCtrl">
 	    <div class="art-dash__main">
 			<div class="art-dash__container" ng-class="{'opacity--1':model.showArt, 'opacity--0':!model.showArt}">
-				<div class="artwork">
-					<img ng-show="model.imageIsVisibile[0]" class="artwork__image" ng-src="{{model.imageSrc[0]}}"/>
-					<img ng-show="model.imageIsVisibile[1]" class="artwork__image" ng-src="{{model.imageSrc[1]}}"/>
-					<div class="artwork__info">{{model.artInfo}}</div>
-				</div>
-				<div class="data__1">{{model.dataInfo1}}</div>
-				<div class="data__2">{{model.dataInfo2}}</div>
+				<img ng-show="model.imageIsVisibile[0]" class="artwork__image" ng-src="{{model.imageSrc[0]}}"/>
+				<img ng-show="model.imageIsVisibile[1]" class="artwork__image" ng-src="{{model.imageSrc[1]}}"/>
+				<div class="artwork__info">{{model.artInfo}}</div>
 			</div>
 		</div>
 	</body>
