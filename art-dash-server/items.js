@@ -2,7 +2,7 @@
 
   exports.items = [
     {
-      desc: 'Number of story points',
+      description: 'Number of story points',
       data: {
         provider: 'constant',
         config: {
@@ -22,7 +22,7 @@
       }
     },
     {
-      desc: 'Number of defects',
+      description: 'Number of defects',
       data: {
         provider: 'octane',
         config: {

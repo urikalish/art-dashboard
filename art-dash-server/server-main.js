@@ -11,11 +11,13 @@ var httpServer = http.Server(app);
 
 function afterGetData(context, data) {
 	console.log('afterGetData()');
+	console.log('Data: ' + JSON.stringify(data));
 	var art = artDashArtProvider.getArt(context, data);
   var response = {
 		general: {
-			index: context.item.index,
-			desc: context.item.desc
+			clientCounter: context.clientCounter,
+			serverIndex: context.item.serverIndex,
+			description: context.item.description
 		},
 		data: {
 			value: data.value,
@@ -29,7 +31,8 @@ function afterGetData(context, data) {
 			imagePath: art.imagePath
 		}
 	};
-	var responseDataJson = JSON.stringify(response);
+	var responseDataJson = JSON.stringify(response, null, 4);
+	console.log('Response: ' + responseDataJson);
 	console.log('--------------------------------------------------------------------------------');
 	context.res.end(responseDataJson);
 }
@@ -43,15 +46,17 @@ app.use('/' + artDashConfig.STATIC_DIR, express.static(__dirname + '/../art-dash
 
 //HTTP POST
 app.post('/api', function(req, res) {
-	var index, item, context;
+	var clientCounter, serverIndex, item, context;
 	console.log('--------------------------------------------------------------------------------');
 	console.log('Server API call');
-	console.log('Client counter: ' + req.body.counter);
-	index = req.body.counter % artDashItems.length;
-	console.log('Server index: ' + index);
-  item = artDashItems[index];
+	clientCounter = parseInt(req.body.clientCounter, 10);
+	console.log('clientCounter: ' + clientCounter);
+	serverIndex = clientCounter % artDashItems.length;
+	console.log('serverIndex: ' + serverIndex);
+  item = artDashItems[serverIndex];
 	console.log('Item: ' + JSON.stringify(item));
 	context = {
+		clientCounter: clientCounter,
 		item: item,
 		res: res
 	};

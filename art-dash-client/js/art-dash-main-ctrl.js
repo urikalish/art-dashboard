@@ -1,7 +1,7 @@
 angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($scope, $timeout, artDashConstants, artDashServ) {
 
   function getData() {
-    artDashServ.getDataFromServer($scope.model.counter, handleServerResponse);
+    artDashServ.getDataFromServer($scope.model.clientCounter, handleServerResponse);
   }
 
   function scheduleGetData() {
@@ -16,14 +16,14 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       $scope.model.imageSrc = artDashConstants.url.artBase + '/' + responseData.art.imagePath;
       $scope.model.artInfo = responseData.art.artistName + ' - "' + responseData.art.artworkName + '", ' + responseData.art.artworkYear;
       $scope.model.showArt = true;
-      $scope.model.counter++;
+      $scope.model.clientCounter++;
       scheduleGetData();
     }, 1500);
   }
 
   $scope.model = {
     showArt: false,
-    counter: 0,
+    clientCounter: 0,
     artInfo: '',
     imageSrc: ''
   };

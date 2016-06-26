@@ -20,6 +20,7 @@
       }
       if (artProvider) {
         art = artProvider.getArt(data.value, data.percentage);
+        console.log('Art: ' + JSON.stringify(art));
         return art;
       }
     }
