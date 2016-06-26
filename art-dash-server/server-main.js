@@ -3,8 +3,8 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var artDashConfig = require('./server-config.js').artDashConfig;
 var artDashItems = require('./items.js').items;
-var artDashDataProvider = require('./data-provider.js').artDashDataProvider;
-var artDashArtProvider = require('./art-provider.js').artDashArtProvider;
+var artDashDataProvider = require('./data-providers/data-provider.js').artDashDataProvider;
+var artDashArtProvider = require('./art-providers/art-provider.js').artDashArtProvider;
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));

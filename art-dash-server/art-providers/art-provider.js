@@ -1,7 +1,7 @@
 (function() {
 
   var artProviders = [
-    require('./art/van-gogh/series1.js').artProvider
+    require('./van-gogh/series1.js').artProvider
   ];
 
   exports.artDashArtProvider = {
