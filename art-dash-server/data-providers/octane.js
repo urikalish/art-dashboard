@@ -73,11 +73,27 @@
   }
 
   function getFixedDefects(config, context, callback) {
-    _requestor.get('/defects/2215', function(error, message, defect) {
-      console.log('Defect #' + defect.id + ': Name: ' + defect.name + ', Desc: ' + defect.description);
+    _requestor.get('/defects/', function(error, message, defects) {
+      var phase = {
+        NEW: 1001,
+        OPENED: 1002,
+        FIXED: 1003
+      };
+      console.log('getFixedDefects() callback');
+      var i, defect, totalCount, fixedCount;
+      totalCount = defects['total_count'];
+      console.log('Number of defects: ' + totalCount);
+      fixedCount = 0;
+      for (i = 0; i < totalCount; i++) {
+        defect = defects.data[i];
+        if (defect.phase.id === phase.FIXED) {
+          fixedCount++;
+        }
+      }
+      console.log('Number of fixed defects: ' + fixedCount);
       var data = {
-        value: config.value,
-        percentage: config.percentage
+        value: fixedCount,
+        percentage: totalCount === 0 ? 0 : Math.floor(fixedCount / totalCount * 100)
       };
       callback(context, data);
     });
