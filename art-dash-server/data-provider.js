@@ -1,8 +1,8 @@
 (function() {
 
   var dataProviders = [
-    require('./dummy/data-provider-dummy.js').dataProvider,
-    require('./octane/data-provider-octane.js').dataProvider
+    require('./data-providers/constant.js').dataProvider,
+    require('./data-providers/octane.js').dataProvider
   ];
 
   exports.artDashDataProvider = {

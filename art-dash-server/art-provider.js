@@ -1,7 +1,8 @@
 (function() {
 
   var artProviders = [
-    require('./van-gogh/series1.js').artProvider
+    require('./art-providers/constant.js').artProvider,
+    require('./art-providers/agile.js').artProvider
   ];
 
   exports.artDashArtProvider = {
@@ -18,7 +19,7 @@
         }
       }
       if (artProvider) {
-        art = artProvider.getArt(response.dataPercent);
+        art = artProvider.getArt(response.dataValue, response.dataPercentage);
         response.artistName = art.artistName;
         response.artworkName = art.artworkName;
         response.artworkInfo = art.artworkInfo;

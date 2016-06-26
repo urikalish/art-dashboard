@@ -4,14 +4,21 @@
     {
       desc: 'Number of story points',
       data: {
-        provider: 'dummy',
+        provider: 'constant',
         config: {
           value: 42,
           percentage: 42
         }
       },
       art: {
-        provider: 'van-gogh-series1'
+        provider: 'constant',
+        config: {
+          artistName: 'Vincent van Gogh',
+          artworkName: 'The Starry Night',
+          artworkInfo: 'The Museum of Modern Art, New York',
+          artworkYear: 1889,
+          imagePath: 'van-gogh/vg1.jpg'
+        }
       }
     },
     {
@@ -24,7 +31,7 @@
         }
       },
       art: {
-        provider: 'van-gogh-series1'
+        provider: 'agile'
       }
     }
   ];

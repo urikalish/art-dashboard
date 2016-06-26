@@ -3,7 +3,7 @@
   exports.dataProvider = {
 
     getName: function getName() {
-      return 'dummy';
+      return 'constant';
     },
     getData: function getData(config) {
       return {

@@ -146,7 +146,7 @@
     },
     getData: function getData(config) {
       work();
-      console.log('####### ' + data.num);
+      console.log('########## ' + data.num);
       return {
         value: config.value,
         percentage: config.percentage

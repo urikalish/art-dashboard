@@ -20,8 +20,8 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       //var dataInfos = responseData.dataString.split(' ');
       //$scope.model.dataInfo1 = dataInfos[0];
       //$scope.model.dataInfo2 = responseData.dataString.substring(dataInfos[0].length);
-      //$scope.model.artInfo = responseData.artistName + ' - ' + responseData.artworkName + ' - ' + responseData.artworkYear;
-      $scope.model.artInfo = responseData.dataValue + ' - ' + responseData.dataPercentage;
+      $scope.model.artInfo = responseData.artistName + ' - "' + responseData.artworkName + '", ' + responseData.artworkYear;
+      //$scope.model.artInfo = responseData.dataValue + ' - ' + responseData.dataPercentage;
       $scope.model.showArt = true;
       $scope.model.index++;
       scheduleGetData();
