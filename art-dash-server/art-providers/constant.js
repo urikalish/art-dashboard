@@ -2,7 +2,7 @@
 
   exports.artProvider = {
     getName: function getName() {
-      return 'constant';
+      return 'CONSTANT';
     },
     getArt: function getArt(dataValue, dataPercent) {
       var art = {};

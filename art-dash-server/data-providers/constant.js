@@ -3,7 +3,7 @@
   exports.dataProvider = {
 
     getName: function getName() {
-      return 'constant';
+      return 'CONSTANT';
     },
     getData: function getData(config, context, callback) {
       var data = {

@@ -4,14 +4,14 @@
     {
       description: 'Number of story points',
       data: {
-        provider: 'constant',
+        provider: 'CONSTANT',
         config: {
           value: 42,
           percentage: 42
         }
       },
       art: {
-        provider: 'constant',
+        provider: 'CONSTANT',
         config: {
           artistName: 'Vincent van Gogh',
           artworkName: 'The Starry Night',
@@ -22,16 +22,15 @@
       }
     },
     {
-      description: 'Number of defects',
+      description: 'Fixed defects',
       data: {
-        provider: 'octane',
+        provider: 'OCTANE',
         config: {
-          value: 75,
-          percentage: 75
+          type: 'FIXED_DEFECTS'
         }
       },
       art: {
-        provider: 'agile'
+        provider: 'AGILE'
       }
     }
   ];

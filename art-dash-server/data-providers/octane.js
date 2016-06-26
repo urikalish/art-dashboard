@@ -72,94 +72,28 @@
     _requestor = requestor;
   }
 
-  login(_requestor, afterLogin);
+  function getFixedDefects(config, context, callback) {
+    _requestor.get('/defects/2215', function(error, message, defect) {
+      console.log('Defect #' + defect.id + ': Name: ' + defect.name + ', Desc: ' + defect.description);
+      var data = {
+        value: config.value,
+        percentage: config.percentage
+      };
+      callback(context, data);
+    });
+  }
 
-  // function work() {
-  //   login(requestor, function(requestor) {
-  //
-  //     function getDefects() {
-  //
-  //       /**
-  //        * Get entity defect 2010
-  //        */
-  //       requestor.get('/defects/2010', function(error, message, defect) {
-  //         var defectDescription = defect.description;
-  //         console.log('DEFECT 2010');
-  //         console.log(defectDescription);
-  //       });
-  //
-  //       /**
-  //        * Get all entity defects
-  //        */
-  //       requestor.get('/defects', function(error, message, defects) {
-  //         console.log('ALL DEFECTS');
-  //         defects.data.forEach(function(defect) {
-  //           console.log('id: ' + defect.id + ' name: ' + defect.name);
-  //         });
-  //       });
-  //
-  //       /**
-  //        * Get all entity defects where id > 2020
-  //        */
-  //       requestor.get('/defects?query="id GT 2020"', function(error, message, defects) {
-  //         console.log('ALL DEFECTS WITH QUERY');
-  //         defects.data.forEach(function(defect) {
-  //           console.log('id: ' + defect.id + ' name: ' + defect.name);
-  //         });
-  //       });
-  //     }
-  //
-  //     function useMetadata() {
-  //       /**
-  //        * get metadata for entity defects
-  //        */
-  //       requestor.get('/metadata/entities?query="name EQ ^defect^"', function(error, message, defects) {
-  //         console.log('GET DEFECTS METADATA');
-  //         defects.data.forEach(function(defectMetadata) {
-  //           console.log('label: ' + defectMetadata.label + ' methods: ' + defectMetadata.features[0].methods);
-  //         });
-  //       });
-  //
-  //       /**
-  //        * get field metadata for entity defects.
-  //        * See metadata for reference fields
-  //        */
-  //       requestor.get('/metadata/fields?query="entity_name EQ ^defect^"', function(error, message, defectFields) {
-  //         console.log('GET DEFECT FIELDS METADATA');
-  //         defectFields.data.forEach(function(defectFieldMetadata) {
-  //           console.log('field name: ' + defectFieldMetadata.name + '; field type: ' + defectFieldMetadata.field_type);
-  //           if (defectFieldMetadata.field_type === 'reference') {
-  //             defectFieldMetadata.field_type_data.targets.forEach(function(referenceTarget) {
-  //               var referenceEntity = referenceTarget.type;
-  //               console.log('reference to ' + referenceEntity);
-  //             });
-  //           }
-  //         });
-  //       });
-  //     }
-  //
-  //     getDefects();
-  //     useMetadata();
-  //
-  //
-  //
-  //   });
-  // }
+  login(_requestor, afterLogin);
 
   exports.dataProvider = {
 
     getName: function getName() {
-      return 'octane';
+      return 'OCTANE';
     },
     getData: function getData(config, context, callback) {
-      _requestor.get('/defects/2215', function(error, message, defect) {
-        console.log('Defect #' + defect.id + ': Name: ' + defect.name + ', Desc: ' + defect.description);
-        var data = {
-          value: config.value,
-          percentage: config.percentage
-        };
-        callback(context, data);
-      });
+      if (config.type === 'FIXED_DEFECTS') {
+        getFixedDefects(config, context, callback);
+      }
     }
   }
 
