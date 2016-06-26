@@ -7,22 +7,21 @@
 
   exports.artDashDataProvider = {
 
-    getData: function getData(item, response) {
-
+    getData: function getData(context, callback) {
+      console.log('getData()');
       var data, i, dataProvider, dataProviderConfig;
       dataProvider = null;
       for (i = 0; i < dataProviders.length; i++) {
         if (dataProvider === null) {
-          if (dataProviders[i].getName() === item.data.provider) {
+          if (dataProviders[i].getName() === context.item.data.provider) {
             dataProvider = dataProviders[i];
-            dataProviderConfig = item.data.config;
+            dataProviderConfig = context.item.data.config;
           }
         }
       }
       if (dataProvider) {
-        data = dataProvider.getData(dataProviderConfig);
-        response.dataValue = data.value;
-        response.dataPercentage = data.percentage;
+        data = dataProvider.getData(dataProviderConfig, context, callback);
+        return data;
       }
     }
   };

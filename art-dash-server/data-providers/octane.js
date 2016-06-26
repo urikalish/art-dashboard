@@ -144,13 +144,13 @@
     getName: function getName() {
       return 'octane';
     },
-    getData: function getData(config) {
-      work();
-      console.log('########## ' + data.num);
-      return {
+    getData: function getData(config, context, callback) {
+      //work();
+      var data = {
         value: config.value,
         percentage: config.percentage
-      }
+      };
+      callback(context, data);
     }
   }
 
