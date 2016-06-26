@@ -1,7 +1,8 @@
 (function() {
 
   var dataProviders = [
-    require('./data/octane/octane-dummy-data.js').dataProvider
+    require('./data/dummy/data-provider-dummy.js').dataProvider,
+    require('./data/octane/data-provider-octane.js').dataProvider
   ];
 
   exports.artDashDataProvider = {
@@ -20,8 +21,8 @@
       }
       if (dataProvider) {
         data = dataProvider.getData(dataProviderConfig);
-        response.dataString = data.dataString;
-        response.dataPercent = data.dataPercent;
+        response.dataValue = data.value;
+        response.dataPercentage = data.percentage;
       }
     }
   };

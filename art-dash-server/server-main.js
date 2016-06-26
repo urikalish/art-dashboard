@@ -20,7 +20,9 @@ app.post('/api', function(req, res) {
 	index = req.body.index;
 	console.log('Server API call. index: ' + index);
   item = artDashItems[index % artDashItems.length];
-	response = {};
+	response = {
+		desc: item.desc
+	};
 	artDashDataProvider.getData(item, response);
 	artDashArtProvider.getArt(item, response);
 	responseDataJson = JSON.stringify(response);

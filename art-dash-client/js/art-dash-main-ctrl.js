@@ -17,10 +17,11 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       $scope.model.imageSrc[i] = artDashConstants.url.artBase + '/' + responseData.imagePath;
       $scope.model.imageIsVisibile[i] = true;
       $scope.model.imageIsVisibile[i*-1 + 1] = false;
-      var dataInfos = responseData.dataString.split(' ');
-      $scope.model.dataInfo1 = dataInfos[0];
-      $scope.model.dataInfo2 = responseData.dataString.substring(dataInfos[0].length);
-      $scope.model.artInfo = responseData.artistName + ' - ' + responseData.artworkName + ' - ' + responseData.artworkYear;
+      //var dataInfos = responseData.dataString.split(' ');
+      //$scope.model.dataInfo1 = dataInfos[0];
+      //$scope.model.dataInfo2 = responseData.dataString.substring(dataInfos[0].length);
+      //$scope.model.artInfo = responseData.artistName + ' - ' + responseData.artworkName + ' - ' + responseData.artworkYear;
+      $scope.model.artInfo = responseData.dataValue + ' - ' + responseData.dataPercentage;
       $scope.model.showArt = true;
       $scope.model.index++;
       scheduleGetData();

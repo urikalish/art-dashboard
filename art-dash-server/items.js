@@ -2,12 +2,12 @@
 
   exports.items = [
     {
+      desc: 'Number of story points',
       data: {
-        provider: 'octane-dummy-data',
+        provider: 'dummy',
         config: {
-          user: '',
-          pass: '',
-          val: 0
+          value: 42,
+          percentage: 42
         }
       },
       art: {
@@ -15,12 +15,12 @@
       }
     },
     {
+      desc: 'Number of defects',
       data: {
-        provider: 'octane-dummy-data',
+        provider: 'octane',
         config: {
-          user: '',
-          pass: '',
-          val: 1
+          value: 75,
+          percentage: 75
         }
       },
       art: {
