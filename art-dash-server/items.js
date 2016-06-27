@@ -2,12 +2,12 @@
 
   exports.items = [
     {
-      description: 'Number of story points',
+      description: 'Feature progress',
       data: {
         provider: 'CONSTANT',
         config: {
           value: 42,
-          percentage: 42
+          percentage: 84
         }
       },
       art: {
