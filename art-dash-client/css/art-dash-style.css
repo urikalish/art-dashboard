@@ -53,13 +53,13 @@ body {
 }
 
 .artwork__info {
-	margin-top: 10px;
 	height: 40px;
 	line-height: 40px;
-	color: #999;
+	color: #aaa;
 }
 
 .data__info {
+	margin-top: 10px;
 	height: 40px;
 	line-height: 40px;
 	font-size: 32px;
