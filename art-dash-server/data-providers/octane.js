@@ -1,11 +1,13 @@
 (function(){
 
-  var request = require('request');
-  var cookie = require('cookie');
-
   const OCTANE_SERVER = 'https://hackathon.almoctane.com';
   const SHAREDSPACE_ID = 1001;
   const WORKSPACE_ID = 1002;
+  const LOGIN_EVERY_NUM_OF_SECONDS = 300;
+
+  var request = require('request');
+  var cookie = require('cookie');
+  var _lastLoginTime = 0;
 
 // create the cookie jar that is needed for authentication
   var _requestor = request.defaults({
@@ -67,9 +69,18 @@
     });
   }
 
-  function afterLogin(requestor) {
-    console.log('Logged in to ALM Octane');
-    _requestor = requestor;
+  function ensureLoggedIn(callback) {
+    if (((new Date()).getTime()) - _lastLoginTime > LOGIN_EVERY_NUM_OF_SECONDS * 1000) {
+      console.log('Logging in to ALM Octane...');
+      login(_requestor, function(requestor) {
+        console.log('Logged in to ALM Octane');
+        _requestor = requestor;
+        _lastLoginTime =  (new Date()).getTime();
+        callback();
+      });
+    } else {
+      callback();
+    }
   }
 
   function getEntitiesByFieldValueId(config, context, callback) {
@@ -77,7 +88,7 @@
       console.log('getEntitiesByFieldValueId() callback');
       var i, totalCount, filteredCount;
       totalCount = entities['total_count'];
-      console.log('Number of entities: ' + entities);
+      console.log('Number of entities: ' + totalCount);
       filteredCount = 0;
       for (i = 0; i < totalCount; i++) {
         if (entities.data[i][config.fieldName].id === config.fieldValueId) {
@@ -93,17 +104,17 @@
     });
   }
 
-  login(_requestor, afterLogin);
-
   exports.dataProvider = {
 
     getName: function getName() {
       return 'OCTANE';
     },
     getData: function getData(config, context, callback) {
-      if (config.type === 'ENTITIES_BY_FIELD_VALUE_ID') {
-        getEntitiesByFieldValueId(config, context, callback);
-      }
+      ensureLoggedIn(function() {
+        if (config.type === 'ENTITIES_BY_FIELD_VALUE_ID') {
+          getEntitiesByFieldValueId(config, context, callback);
+        }
+      });
     }
   }
 
