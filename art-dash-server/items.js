@@ -6,10 +6,10 @@
       data: {
         provider: 'OCTANE',
         config: {
-          type: 'ENTITIES_BY_FIELD_VALUE_ID',
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/work_items?query="subtype=%27story%27"',
           fieldName: 'phase',
-          fieldValueId: 1025
+          fieldValueId: 2362
         }
       },
       art: {
@@ -17,14 +17,15 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Done story points',
       data: {
         provider: 'OCTANE',
         config: {
-          type: 'ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/defects',
-          fieldName: 'severity',
-          fieldValueId: 1006
+          type: 'SUM_VALUE_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27story%27"',
+          sumFieldName: 'story_points',
+          fieldName: 'phase',
+          fieldValueId: 2362
         }
       },
       art: {
@@ -36,10 +37,25 @@
       data: {
         provider: 'OCTANE',
         config: {
-          type: 'ENTITIES_BY_FIELD_VALUE_ID',
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/defects',
           fieldName: 'phase',
-          fieldValueId: 1003
+          fieldValueId: 2342
+        }
+      },
+      art: {
+        provider: 'AGILE'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'severity',
+          fieldValueId: 3062
         }
       },
       art: {
@@ -165,7 +181,7 @@
           imagePath: 'van-gogh/vg1.jpg'
         }
       }
-    },
+    }
   ];
 
 })();

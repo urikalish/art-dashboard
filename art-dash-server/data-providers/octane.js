@@ -2,7 +2,7 @@
 
   const OCTANE_SERVER = 'https://hackathon.almoctane.com';
   const SHAREDSPACE_ID = 1001;
-  const WORKSPACE_ID = 1002;
+  const WORKSPACE_ID = 2013;
   const LOGIN_EVERY_NUM_OF_SECONDS = 300;
 
   var request = require('request');
@@ -32,8 +32,10 @@
     requestor.post({
       uri: '/authentication/sign_in',
       body: {
-        user: 'hackathon@user',
-        password: 'Mission-impossible'
+        // user: 'hackathon@user',
+        // password: 'Mission-impossible'
+        client_id: 'Kalish_nkygenk7k5o8jigo9w663ev26',
+        client_secret: '@19b476b49bc6ae68I'
         /**
          * alternatively you can use API key like this
          * client_id: '', // put API KEY here
@@ -83,9 +85,11 @@
     }
   }
 
-  function getEntitiesByFieldValueId(config, context, callback) {
+  function countEntitiesByFieldValueId(config, context, callback) {
     _requestor.get(config.url, function(error, message, entities) {
       console.log('getEntitiesByFieldValueId() callback');
+      //console.log('message: ' + JSON.stringify(message, null, 4));
+      //console.log('error: ' + JSON.stringify(error, null, 4));
       var i, totalCount, filteredCount;
       totalCount = entities['total_count'];
       console.log('Number of entities: ' + totalCount);
@@ -104,6 +108,35 @@
     });
   }
 
+  function sumValueByFieldValueId(config, context, callback) {
+    _requestor.get(config.url, function(error, message, entities) {
+      console.log('sumValueByFieldValueId() callback');
+      //console.log('message: ' + JSON.stringify(message, null, 4));
+      //console.log('error: ' + JSON.stringify(error, null, 4));
+      var i, totalCount, totalSum, filteredSum, value;
+      totalCount = entities['total_count'];
+      console.log('Number of entities: ' + totalCount);
+      totalSum = 0;
+      filteredSum = 0;
+      for (i = 0; i < totalCount; i++) {
+        value = entities.data[i][config.sumFieldName];
+        if (value) {
+          totalSum += value;
+          if (entities.data[i][config.fieldName].id === config.fieldValueId) {
+            filteredSum += value;
+          }
+        }
+      }
+      console.log('Total sum: ' + totalSum);
+      console.log('Filtered sum: ' + filteredSum);
+      var data = {
+        value: filteredSum,
+        percentage: totalSum === 0 ? 0 : Math.floor(filteredSum / totalSum * 100)
+      };
+      callback(context, data);
+    });
+  }
+
   exports.dataProvider = {
 
     getName: function getName() {
@@ -111,8 +144,10 @@
     },
     getData: function getData(config, context, callback) {
       ensureLoggedIn(function() {
-        if (config.type === 'ENTITIES_BY_FIELD_VALUE_ID') {
-          getEntitiesByFieldValueId(config, context, callback);
+        if (config.type === 'COUNT_ENTITIES_BY_FIELD_VALUE_ID') {
+          countEntitiesByFieldValueId(config, context, callback);
+        } else if (config.type === 'SUM_VALUE_BY_FIELD_VALUE_ID') {
+          sumValueByFieldValueId(config, context, callback);
         }
       });
     }
