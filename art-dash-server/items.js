@@ -2,6 +2,21 @@
 
   exports.items = [
     {
+      description: 'Done features',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27feature%27"',
+          fieldName: 'phase',
+          fieldValueId: 2358
+        }
+      },
+      art: {
+        provider: 'AGILE'
+      }
+    },
+    {
       description: 'Done stories',
       data: {
         provider: 'OCTANE',
@@ -119,26 +134,6 @@
           artworkInfo: '1200x900',
           artworkYear: 2016,
           imagePath: 'agile/burn-down.jpg'
-        }
-      }
-    },
-    {
-      description: 'Feature progress',
-      data: {
-        provider: 'CONSTANT',
-        config: {
-          value: 42,
-          percentage: 84
-        }
-      },
-      art: {
-        provider: 'CONSTANT',
-        config: {
-          artistName: 'Vincent van Gogh',
-          artworkName: 'The Starry Night',
-          artworkInfo: 'The Museum of Modern Art, New York',
-          artworkYear: 1889,
-          imagePath: 'van-gogh/vg1.jpg'
         }
       }
     },
