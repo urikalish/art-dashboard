@@ -55,7 +55,7 @@
           type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/defects',
           fieldName: 'phase',
-          fieldValueId: 2342
+          fieldValueId: 2340
         }
       },
       art: {
