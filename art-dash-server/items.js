@@ -22,6 +22,21 @@
       }
     },
     {
+      description: 'Urgent defects',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'severity',
+          fieldValueId: 1006
+        }
+      },
+      art: {
+        provider: 'AGILE'
+      }
+    },
+    {
       description: 'Fixed defects',
       data: {
         provider: 'OCTANE',
@@ -30,6 +45,21 @@
           url: '/defects',
           fieldName: 'phase',
           fieldValueId: 1003
+        }
+      },
+      art: {
+        provider: 'AGILE'
+      }
+    },
+    {
+      description: 'Done stories',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27story%27"',
+          fieldName: 'phase',
+          fieldValueId: 1025
         }
       },
       art: {
