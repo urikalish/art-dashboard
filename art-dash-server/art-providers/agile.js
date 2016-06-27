@@ -10,7 +10,7 @@
       art.artworkName = 'Starry Night Over the Rhone';
       art.artworkInfo = 'Musée d\'Orsay, Paris';
       art.artworkYear = 1888;
-      art.imagePath = 'agile/vg2.jpg';
+      art.imagePath = 'van-gogh/vg2.jpg';
       return art;
     }
   }
