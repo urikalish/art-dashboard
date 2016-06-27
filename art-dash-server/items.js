@@ -26,7 +26,10 @@
       data: {
         provider: 'OCTANE',
         config: {
-          type: 'FIXED_DEFECTS'
+          type: 'ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'phase',
+          fieldValueId: 1003
         }
       },
       art: {

@@ -68,32 +68,26 @@
   }
 
   function afterLogin(requestor) {
-    console.log('afterLogin()');
+    console.log('Logged in to ALM Octane');
     _requestor = requestor;
   }
 
-  function getFixedDefects(config, context, callback) {
-    _requestor.get('/defects/', function(error, message, defects) {
-      var phase = {
-        NEW: 1001,
-        OPENED: 1002,
-        FIXED: 1003
-      };
-      console.log('getFixedDefects() callback');
-      var i, defect, totalCount, fixedCount;
-      totalCount = defects['total_count'];
-      console.log('Number of defects: ' + totalCount);
-      fixedCount = 0;
+  function getEntitiesByFieldValueId(config, context, callback) {
+    _requestor.get(config.url, function(error, message, entities) {
+      console.log('getEntitiesByFieldValueId() callback');
+      var i, totalCount, filteredCount;
+      totalCount = entities['total_count'];
+      console.log('Number of entities: ' + entities);
+      filteredCount = 0;
       for (i = 0; i < totalCount; i++) {
-        defect = defects.data[i];
-        if (defect.phase.id === phase.FIXED) {
-          fixedCount++;
+        if (entities.data[i][config.fieldName].id === config.fieldValueId) {
+          filteredCount++;
         }
       }
-      console.log('Number of fixed defects: ' + fixedCount);
+      console.log('Number of filtered entities: ' + filteredCount);
       var data = {
-        value: fixedCount,
-        percentage: totalCount === 0 ? 0 : Math.floor(fixedCount / totalCount * 100)
+        value: filteredCount,
+        percentage: totalCount === 0 ? 0 : Math.floor(filteredCount / totalCount * 100)
       };
       callback(context, data);
     });
@@ -107,8 +101,8 @@
       return 'OCTANE';
     },
     getData: function getData(config, context, callback) {
-      if (config.type === 'FIXED_DEFECTS') {
-        getFixedDefects(config, context, callback);
+      if (config.type === 'ENTITIES_BY_FIELD_VALUE_ID') {
+        getEntitiesByFieldValueId(config, context, callback);
       }
     }
   }
