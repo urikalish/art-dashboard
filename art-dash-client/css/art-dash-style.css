@@ -42,7 +42,7 @@ body {
 	padding: 100px;
 	overflow: hidden;
 	text-align: center;
-	transition: all 1.5s ease;
+	transition: all 1s ease;
 }
 
 .artwork__image {
