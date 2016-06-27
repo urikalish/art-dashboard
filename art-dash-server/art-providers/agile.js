@@ -4,7 +4,7 @@
     getName: function getName() {
       return 'AGILE';
     },
-    getArt: function getArt(dataValue, dataPercentage) {
+    getArt: function getArt(config, data) {
       var art = {};
       art.artistName = 'Vincent van Gogh';
       art.artworkName = 'Starry Night Over the Rhone';

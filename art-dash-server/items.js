@@ -2,6 +2,26 @@
 
   exports.items = [
     {
+      description: 'Sprint position',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 50,
+          percentage: 50
+        }
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Uri Kalish',
+          artworkName: 'Running Track',
+          artworkInfo: '2560x1600',
+          artworkYear: 2016,
+          imagePath: 'agile/running-track.jpg'
+        }
+      }
+    },
+    {
       description: 'Feature progress',
       data: {
         provider: 'CONSTANT',

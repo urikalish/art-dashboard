@@ -9,7 +9,7 @@
 
     getData: function getData(context, callback) {
       console.log('getData()');
-      var data, i, dataProvider, dataProviderConfig;
+      var i, data, dataProvider, dataProviderConfig;
       dataProvider = null;
       for (i = 0; i < dataProviders.length; i++) {
         if (dataProvider === null) {

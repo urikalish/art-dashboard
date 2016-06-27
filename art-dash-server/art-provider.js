@@ -9,17 +9,18 @@
 
     getArt: function getData(context, data) {
       console.log('getArt()');
-      var artProvider, i, art;
+      var i, art, artProvider, artProviderConfig;
       artProvider = null;
       for (i = 0; i < artProviders.length; i++) {
         if (artProvider === null) {
           if (artProviders[i].getName() === context.item.art.provider) {
             artProvider = artProviders[i];
+            artProviderConfig = context.item.art.config;
           }
         }
       }
       if (artProvider) {
-        art = artProvider.getArt(data.value, data.percentage);
+        art = artProvider.getArt(artProviderConfig, data);
         console.log('Art: ' + JSON.stringify(art));
         return art;
       }
