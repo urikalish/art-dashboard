@@ -7,7 +7,7 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
   function scheduleGetData() {
     $timeout(function() {
       getData();
-    }, 5000);
+    }, 3000);
   }
 
   function handleServerResponse(responseData) {
