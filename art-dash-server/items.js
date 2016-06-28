@@ -2,6 +2,71 @@
 
   exports.items = [
     {
+      description: 'Gherkin feature progress',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 20
+        }
+      },
+      art: {
+        provider: 'CUCUMBER'
+      }
+    },
+    {
+      description: 'Gherkin feature progress',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 40
+        }
+      },
+      art: {
+        provider: 'CUCUMBER'
+      }
+    },
+    {
+      description: 'Gherkin feature progress',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 60
+        }
+      },
+      art: {
+        provider: 'CUCUMBER'
+      }
+    },
+    {
+      description: 'Gherkin feature progress',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 80
+        }
+      },
+      art: {
+        provider: 'CUCUMBER'
+      }
+    },
+    {
+      description: 'Gherkin feature progress',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 100
+        }
+      },
+      art: {
+        provider: 'CUCUMBER'
+      }
+    },
+    {
       description: 'Done features',
       data: {
         provider: 'OCTANE',
