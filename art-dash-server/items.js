@@ -428,21 +428,21 @@
         provider: 'COLOR_TUBES'
       }
     },
-    {
-      description: 'Done User-Stories',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27story%27"',
-          fieldName: 'phase',
-          fieldValueId: 4025
-        }
-      },
-      art: {
-        provider: 'VAN_GOGH'
-      }
-    },
+    // {
+    //   description: 'Done User-Stories',
+    //   data: {
+    //     provider: 'OCTANE',
+    //     config: {
+    //       type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+    //       url: '/work_items?query="subtype=%27story%27"',
+    //       fieldName: 'phase',
+    //       fieldValueId: 4025
+    //     }
+    //   },
+    //   art: {
+    //     provider: 'VAN_GOGH'
+    //   }
+    // },
     {
       description: 'Done Story-Points',
       data: {
@@ -456,7 +456,14 @@
         }
       },
       art: {
-        provider: 'VAN_GOGH'
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Zeev Parush',
+          artworkName: 'Story points tower',
+          artworkInfo: 'Photograph',
+          artworkYear: 2016,
+          imagePath: 'misc/story-points-60.jpg'
+        }
       }
     },
     {
@@ -486,7 +493,14 @@
         }
       },
       art: {
-        provider: 'VAN_GOGH'
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Zeev Parush',
+          artworkName: 'Big Number Small Beetle',
+          artworkInfo: 'Photograph',
+          artworkYear: 2016,
+          imagePath: 'misc/defects-4.jpg'
+        }
       }
     }
   ];
