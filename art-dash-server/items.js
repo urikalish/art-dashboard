@@ -7,9 +7,11 @@
       data: {
         provider: 'CONSTANT',
         config: {
-          value: 23,
-          percentage: 23
-        }
+          value: 0,
+          percentage: 0
+        },
+        hideValue: true,
+        hidePercentage: true
       },
       art: {
         provider: 'VAN_GOGH'
@@ -21,9 +23,11 @@
       data: {
         provider: 'CONSTANT',
         config: {
-          value: 50,
-          percentage: 50
-        }
+          value: 0,
+          percentage: 0
+        },
+        hideValue: true,
+        hidePercentage: true
       },
       art: {
         provider: 'VAN_GOGH'
@@ -35,9 +39,11 @@
       data: {
         provider: 'CONSTANT',
         config: {
-          value: 23,
-          percentage: 23
-        }
+          value: 0,
+          percentage: 0
+        },
+        hideValue: true,
+        hidePercentage: true
       },
       art: {
         provider: 'VAN_GOGH'
