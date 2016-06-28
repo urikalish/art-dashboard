@@ -308,84 +308,90 @@
     },
     // Urgent Defects --------------------------------------------------------------------------------------------------
     {
-      description: 'Urgent Defects',
+      description: 'Urgent Defects: 15',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 10,
           percentage: null
-        }
+        },
+        hideValue: true
       },
       art: {
         provider: 'BEETLES'
       }
     },
     {
-      description: 'Urgent Defects',
+      description: 'Urgent Defects: 12',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 8,
           percentage: null
-        }
+        },
+        hideValue: true
       },
       art: {
         provider: 'BEETLES'
       }
     },
     {
-      description: 'Urgent Defects',
+      description: 'Urgent Defects: 9',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 6,
           percentage: null
-        }
+        },
+        hideValue: true
       },
       art: {
         provider: 'BEETLES'
       }
     },
     {
-      description: 'Urgent Defects',
+      description: 'Urgent Defects: 7',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 4,
           percentage: null
-        }
+        },
+        hideValue: true
       },
       art: {
         provider: 'BEETLES'
       }
     },
     {
-      description: 'Urgent Defects',
+      description: 'Urgent Defects: 5',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 2,
           percentage: null
-        }
+        },
+        hideValue: true
       },
       art: {
         provider: 'BEETLES'
       }
     },
     {
-      description: 'Urgent Defects',
+      description: 'Urgent Defects: 0',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 0,
           percentage: null
-        }
+        },
+        hideValue: true
       },
       art: {
         provider: 'BEETLES'
