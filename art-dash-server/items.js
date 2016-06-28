@@ -49,7 +49,7 @@
           url: '/defects',
           fieldName: 'severity',
           fieldValueId: 6006
-        },
+        }
       },
       art: {
         provider: 'BEATLES'
