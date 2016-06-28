@@ -2,7 +2,7 @@
 
   exports.artProvider = {
     getName: function getName() {
-      return 'AGILE';
+      return 'VAN_GOGH';
     },
     getArt: function getArt(config, data) {
       var art = {};

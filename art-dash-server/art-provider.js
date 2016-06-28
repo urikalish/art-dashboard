@@ -6,7 +6,7 @@
     require('./art-providers/beetles.js').artProvider,
     require('./art-providers/code-coverage.js').artProvider,
     require('./art-providers/constant.js').artProvider,
-    require('./art-providers/agile.js').artProvider
+    require('./art-providers/van-gogh.js').artProvider
   ];
 
   exports.artDashArtProvider = {
