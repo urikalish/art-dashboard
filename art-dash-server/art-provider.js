@@ -2,6 +2,8 @@
 
   var artProviders = [
     require('./art-providers/cucumber.js').artProvider,
+    require('./art-providers/beatles.js').artProvider,
+    require('./art-providers/code-coverage.js').artProvider,
     require('./art-providers/constant.js').artProvider,
     require('./art-providers/agile.js').artProvider
   ];

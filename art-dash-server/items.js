@@ -2,6 +2,60 @@
 
   exports.items = [
     {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 75
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 85
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 95
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'severity',
+          fieldValueId: 6006
+        },
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
       description: 'Gherkin feature progress',
       data: {
         provider: 'CONSTANT',
@@ -67,6 +121,84 @@
       }
     },
     {
+      description: 'Urgent defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 10,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 8,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 6,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 4,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 2,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 0,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'BEATLES'
+      }
+    },
+    {
       description: 'Done features',
       data: {
         provider: 'OCTANE',
@@ -121,21 +253,6 @@
           url: '/defects',
           fieldName: 'phase',
           fieldValueId: 4003
-        }
-      },
-      art: {
-        provider: 'AGILE'
-      }
-    },
-    {
-      description: 'Urgent defects',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/defects',
-          fieldName: 'severity',
-          fieldValueId: 6006
         }
       },
       art: {
