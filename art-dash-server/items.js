@@ -80,21 +80,6 @@
         provider: 'COLOR_TUBES'
       }
     },
-    {
-      description: 'Done features',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27feature%27"',
-          fieldName: 'phase',
-          fieldValueId: 4021
-        }
-      },
-      art: {
-        provider: 'AGILE'
-      }
-    },
     // Gherkin feature progress ----------------------------------------------------------------------------------------
     {
       description: 'Gherkin feature progress',
@@ -294,6 +279,21 @@
       }
     },
     // Real data -------------------------------------------------------------------------------------------------------
+    {
+      description: 'Done features',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27feature%27"',
+          fieldName: 'phase',
+          fieldValueId: 4021
+        }
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
     {
       description: 'Done stories',
       data: {
