@@ -1,9 +1,9 @@
 (function() {
 
   exports.items = [
-    // Sprint status ---------------------------------------------------------------------------------------------------
+    // Sprint Status ---------------------------------------------------------------------------------------------------
     {
-      description: 'Sprint status',
+      description: 'Sprint Status',
       data: {
         provider: 'CONSTANT',
         config: {
@@ -17,9 +17,9 @@
         provider: 'VAN_GOGH'
       }
     },
-    // Sprint time-line ------------------------------------------------------------------------------------------------
+    // Sprint Time-Line ------------------------------------------------------------------------------------------------
     {
-      description: 'Sprint time-line',
+      description: 'Sprint Time-Line',
       data: {
         provider: 'CONSTANT',
         config: {
@@ -33,9 +33,9 @@
         provider: 'VAN_GOGH'
       }
     },
-    // Burn down chart -------------------------------------------------------------------------------------------------
+    // Burn-Down Chart -------------------------------------------------------------------------------------------------
     {
-      description: 'Burn down chart',
+      description: 'Burn-Down Chart',
       data: {
         provider: 'CONSTANT',
         config: {
@@ -49,9 +49,9 @@
         provider: 'VAN_GOGH'
       }
     },
-    // Done features ---------------------------------------------------------------------------------------------------
+    // Done Features ---------------------------------------------------------------------------------------------------
     {
-      description: 'Done features',
+      description: 'Done Features',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -65,7 +65,7 @@
       }
     },
     {
-      description: 'Done features',
+      description: 'Done Features',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -79,7 +79,7 @@
       }
     },
     {
-      description: 'Done features',
+      description: 'Done Features',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -93,7 +93,7 @@
       }
     },
     {
-      description: 'Done features',
+      description: 'Done Features',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -107,7 +107,7 @@
       }
     },
     {
-      description: 'Done features',
+      description: 'Done Features',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -121,7 +121,7 @@
       }
     },
     {
-      description: 'Done features',
+      description: 'Done Features',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -134,9 +134,9 @@
         provider: 'COLOR_TUBES'
       }
     },
-    // Gherkin feature progress ----------------------------------------------------------------------------------------
+    // Gherkin Features Progress ---------------------------------------------------------------------------------------
     {
-      description: 'Gherkin feature progress',
+      description: 'Gherkin Features Progress',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -150,7 +150,7 @@
       }
     },
     {
-      description: 'Gherkin feature progress',
+      description: 'Gherkin Features Progress',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -164,7 +164,7 @@
       }
     },
     {
-      description: 'Gherkin feature progress',
+      description: 'Gherkin Features Progress',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -178,7 +178,7 @@
       }
     },
     {
-      description: 'Gherkin feature progress',
+      description: 'Gherkin Features Progress',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -192,7 +192,7 @@
       }
     },
     {
-      description: 'Gherkin feature progress',
+      description: 'Gherkin Features Progress',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -205,9 +205,9 @@
         provider: 'CUCUMBER'
       }
     },
-    // Done story points -----------------------------------------------------------------------------------------------
+    // Done Story-Points -----------------------------------------------------------------------------------------------
     {
-      description: 'Done story points',
+      description: 'Done Story-Points',
       data: {
         provider: 'CONSTANT',
         config: {
@@ -226,9 +226,9 @@
         }
       }
     },
-    // Code coverage ---------------------------------------------------------------------------------------------------
+    // Code Coverage ---------------------------------------------------------------------------------------------------
     {
-      description: 'Code coverage',
+      description: 'Code Coverage',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -242,7 +242,7 @@
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Code Coverage',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -256,7 +256,7 @@
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Code Coverage',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -270,7 +270,7 @@
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Code Coverage',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -283,9 +283,9 @@
         provider: 'CODE_COVERAGE'
       }
     },
-    // Test runs status ------------------------------------------------------------------------------------------------
+    // Test Runs Status ------------------------------------------------------------------------------------------------
     {
-      description: 'Test runs status',
+      description: 'Test Runs Status',
       data: {
         provider: 'CONSTANT',
         config: {
@@ -306,9 +306,9 @@
         }
       }
     },
-    // Urgent defects --------------------------------------------------------------------------------------------------
+    // Urgent Defects --------------------------------------------------------------------------------------------------
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -322,7 +322,7 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -336,7 +336,7 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -350,7 +350,7 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -364,7 +364,7 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -378,7 +378,7 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       shortDisplay: true,
       data: {
         provider: 'CONSTANT',
@@ -391,9 +391,9 @@
         provider: 'BEETLES'
       }
     },
-    // Fixed defects ---------------------------------------------------------------------------------------------------
+    // Fixed Defects ---------------------------------------------------------------------------------------------------
     {
-      description: 'Fixed defects',
+      description: 'Fixed Defects',
       data: {
         provider: 'CONSTANT',
         config: {
@@ -412,9 +412,9 @@
         }
       }
     },
-    // Real data -------------------------------------------------------------------------------------------------------
+    // Real Data -------------------------------------------------------------------------------------------------------
     {
-      description: 'Done features',
+      description: 'Done Features',
       data: {
         provider: 'OCTANE',
         config: {
@@ -429,7 +429,7 @@
       }
     },
     {
-      description: 'Done stories',
+      description: 'Done User-Stories',
       data: {
         provider: 'OCTANE',
         config: {
@@ -444,7 +444,7 @@
       }
     },
     {
-      description: 'Done story points',
+      description: 'Done Story-Points',
       data: {
         provider: 'OCTANE',
         config: {
@@ -460,7 +460,7 @@
       }
     },
     {
-      description: 'Urgent defects',
+      description: 'Urgent Defects',
       data: {
         provider: 'OCTANE',
         config: {
@@ -475,7 +475,7 @@
       }
     },
     {
-      description: 'Fixed defects',
+      description: 'Fixed Defects',
       data: {
         provider: 'OCTANE',
         config: {
