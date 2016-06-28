@@ -17,7 +17,8 @@ function afterGetData(context, data) {
 		general: {
 			clientCounter: context.clientCounter,
 			serverIndex: context.item.serverIndex,
-			description: context.item.description
+			description: context.item.description,
+			shortDisplay: context.item.shortDisplay
 		},
 		data: {
 			value: context.item.data.hideValue ? null : data.value,

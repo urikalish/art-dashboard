@@ -4,6 +4,7 @@
     // Done features ---------------------------------------------------------------------------------------------------
     {
       description: 'Done features',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -17,6 +18,7 @@
     },
     {
       description: 'Done features',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -30,6 +32,7 @@
     },
     {
       description: 'Done features',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -43,6 +46,7 @@
     },
     {
       description: 'Done features',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -56,6 +60,7 @@
     },
     {
       description: 'Done features',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -69,6 +74,7 @@
     },
     {
       description: 'Done features',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -83,6 +89,7 @@
     // Gherkin feature progress ----------------------------------------------------------------------------------------
     {
       description: 'Gherkin feature progress',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -96,6 +103,7 @@
     },
     {
       description: 'Gherkin feature progress',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -109,6 +117,7 @@
     },
     {
       description: 'Gherkin feature progress',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -122,6 +131,7 @@
     },
     {
       description: 'Gherkin feature progress',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -135,6 +145,7 @@
     },
     {
       description: 'Gherkin feature progress',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -170,6 +181,7 @@
     // Code coverage ---------------------------------------------------------------------------------------------------
     {
       description: 'Code coverage',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -183,6 +195,7 @@
     },
     {
       description: 'Code coverage',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -196,6 +209,7 @@
     },
     {
       description: 'Code coverage',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -209,6 +223,7 @@
     },
     {
       description: 'Code coverage',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -246,6 +261,7 @@
     // Urgent defects --------------------------------------------------------------------------------------------------
     {
       description: 'Urgent defects',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -259,6 +275,7 @@
     },
     {
       description: 'Urgent defects',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -272,6 +289,7 @@
     },
     {
       description: 'Urgent defects',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -285,6 +303,7 @@
     },
     {
       description: 'Urgent defects',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -298,6 +317,7 @@
     },
     {
       description: 'Urgent defects',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -311,6 +331,7 @@
     },
     {
       description: 'Urgent defects',
+      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {

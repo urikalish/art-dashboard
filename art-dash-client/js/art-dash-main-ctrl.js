@@ -4,10 +4,10 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
     artDashServ.getDataFromServer($scope.model.clientCounter, handleServerResponse);
   }
 
-  function scheduleGetData() {
+  function scheduleGetData(delay) {
     $timeout(function() {
       getData();
-    }, 2500);
+    }, delay);
   }
 
   function handleServerResponse(responseData) {
@@ -27,7 +27,7 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       }
       $scope.model.showArt = true;
       $scope.model.clientCounter++;
-      scheduleGetData();
+      scheduleGetData(responseData.general.shortDisplay ? 2000 : 4000);
     }, 1000);
   }
 
