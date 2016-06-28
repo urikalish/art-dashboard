@@ -2,42 +2,64 @@
 
   exports.items = [
     {
-      description: 'Code coverage',
+      description: 'Done features',
       data: {
-        provider: 'CONSTANT',
+        provider: 'OCTANE',
         config: {
-          value: null,
-          percentage: 75
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27feature%27"',
+          fieldName: 'phase',
+          fieldValueId: 4021
         }
       },
       art: {
-        provider: 'CODE_COVERAGE'
+        provider: 'AGILE'
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Done stories',
       data: {
-        provider: 'CONSTANT',
+        provider: 'OCTANE',
         config: {
-          value: null,
-          percentage: 85
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27story%27"',
+          fieldName: 'phase',
+          fieldValueId: 4025
         }
       },
       art: {
-        provider: 'CODE_COVERAGE'
+        provider: 'AGILE'
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Done story points',
       data: {
-        provider: 'CONSTANT',
+        provider: 'OCTANE',
         config: {
-          value: null,
-          percentage: 95
+          type: 'SUM_VALUE_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27story%27"',
+          sumFieldName: 'story_points',
+          fieldName: 'phase',
+          fieldValueId: 4025
         }
       },
       art: {
-        provider: 'CODE_COVERAGE'
+        provider: 'AGILE'
+      }
+    },
+    {
+      description: 'Fixed defects',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'phase',
+          fieldValueId: 4003
+        }
+      },
+      art: {
+        provider: 'AGILE'
       }
     },
     {
@@ -199,64 +221,42 @@
       }
     },
     {
-      description: 'Done features',
+      description: 'Code coverage',
       data: {
-        provider: 'OCTANE',
+        provider: 'CONSTANT',
         config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27feature%27"',
-          fieldName: 'phase',
-          fieldValueId: 4021
+          value: null,
+          percentage: 75
         }
       },
       art: {
-        provider: 'AGILE'
+        provider: 'CODE_COVERAGE'
       }
     },
     {
-      description: 'Done stories',
+      description: 'Code coverage',
       data: {
-        provider: 'OCTANE',
+        provider: 'CONSTANT',
         config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27story%27"',
-          fieldName: 'phase',
-          fieldValueId: 4025
+          value: null,
+          percentage: 85
         }
       },
       art: {
-        provider: 'AGILE'
+        provider: 'CODE_COVERAGE'
       }
     },
     {
-      description: 'Done story points',
+      description: 'Code coverage',
       data: {
-        provider: 'OCTANE',
+        provider: 'CONSTANT',
         config: {
-          type: 'SUM_VALUE_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27story%27"',
-          sumFieldName: 'story_points',
-          fieldName: 'phase',
-          fieldValueId: 4025
+          value: null,
+          percentage: 95
         }
       },
       art: {
-        provider: 'AGILE'
-      }
-    },
-    {
-      description: 'Fixed defects',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/defects',
-          fieldName: 'phase',
-          fieldValueId: 4003
-        }
-      },
-      art: {
-        provider: 'AGILE'
+        provider: 'CODE_COVERAGE'
       }
     },
     {
@@ -336,26 +336,6 @@
           artworkInfo: 'The Museum of Modern Art, New York',
           artworkYear: 1889,
           imagePath: 'van-gogh/vg2.jpg'
-        }
-      }
-    },
-    {
-      description: 'Code coverage',
-      data: {
-        provider: 'CONSTANT',
-        config: {
-          value: 42,
-          percentage: 84
-        }
-      },
-      art: {
-        provider: 'CONSTANT',
-        config: {
-          artistName: 'Vincent van Gogh',
-          artworkName: 'The Starry Night',
-          artworkInfo: 'The Museum of Modern Art, New York',
-          artworkYear: 1889,
-          imagePath: 'van-gogh/vg1.jpg'
         }
       }
     }
