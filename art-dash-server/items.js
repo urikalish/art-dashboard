@@ -146,6 +146,27 @@
         provider: 'CUCUMBER'
       }
     },
+    // Done story points -----------------------------------------------------------------------------------------------
+    {
+      description: 'Done story points',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 60
+        }
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Zeev Parush',
+          artworkName: 'Story points tower',
+          artworkInfo: 'Photograph',
+          artworkYear: 2016,
+          imagePath: 'misc/story-points-60.jpg'
+        }
+      }
+    },
     // Code coverage ---------------------------------------------------------------------------------------------------
     {
       description: 'Code coverage',
@@ -197,6 +218,29 @@
       },
       art: {
         provider: 'CODE_COVERAGE'
+      }
+    },
+    // Test runs status ------------------------------------------------------------------------------------------------
+    {
+      description: 'Test runs status',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: null
+        },
+        hideValue: true,
+        hidePercentage: true
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Zeev Parush',
+          artworkName: 'Story points tower',
+          artworkInfo: 'Photograph',
+          artworkYear: 2016,
+          imagePath: 'misc/test-runs-status.jpg'
+        }
       }
     },
     // Urgent defects --------------------------------------------------------------------------------------------------
@@ -278,6 +322,7 @@
         provider: 'BEETLES'
       }
     },
+    // Fixed defects ---------------------------------------------------------------------------------------------------
     {
       description: 'Fixed defects',
       data: {
@@ -291,10 +336,10 @@
         provider: 'CONSTANT',
         config: {
           artistName: 'Zeev Parush',
-          artworkName: 'Big NUmber Small beatle',
-          artworkInfo: 'The Museum of Modern Art, New York',
-          artworkYear: 1889,
-          imagePath: 'van-gogh/vg2.jpg'
+          artworkName: 'Big Number Small Beetle',
+          artworkInfo: 'Photograph',
+          artworkYear: 2016,
+          imagePath: 'misc/defects-4.jpg'
         }
       }
     },
