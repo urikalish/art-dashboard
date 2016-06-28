@@ -206,26 +206,26 @@
       }
     },
     // Done Story-Points -----------------------------------------------------------------------------------------------
-    {
-      description: 'Done Story-Points',
-      data: {
-        provider: 'CONSTANT',
-        config: {
-          value: null,
-          percentage: 60
-        }
-      },
-      art: {
-        provider: 'CONSTANT',
-        config: {
-          artistName: 'Zeev Parush',
-          artworkName: 'Story points tower',
-          artworkInfo: 'Photograph',
-          artworkYear: 2016,
-          imagePath: 'misc/story-points-60.jpg'
-        }
-      }
-    },
+    // {
+    //   description: 'Done Story-Points',
+    //   data: {
+    //     provider: 'CONSTANT',
+    //     config: {
+    //       value: null,
+    //       percentage: 60
+    //     }
+    //   },
+    //   art: {
+    //     provider: 'CONSTANT',
+    //     config: {
+    //       artistName: 'Zeev Parush',
+    //       artworkName: 'Story points tower',
+    //       artworkInfo: 'Photograph',
+    //       artworkYear: 2016,
+    //       imagePath: 'misc/story-points-60.jpg'
+    //     }
+    //   }
+    // },
     // Code Coverage ---------------------------------------------------------------------------------------------------
     {
       description: 'Code Coverage',
@@ -398,26 +398,26 @@
       }
     },
     // Fixed Defects ---------------------------------------------------------------------------------------------------
-    {
-      description: 'Fixed Defects',
-      data: {
-        provider: 'CONSTANT',
-        config: {
-          value: 4,
-          percentage: null
-        }
-      },
-      art: {
-        provider: 'CONSTANT',
-        config: {
-          artistName: 'Zeev Parush',
-          artworkName: 'Big Number Small Beetle',
-          artworkInfo: 'Photograph',
-          artworkYear: 2016,
-          imagePath: 'misc/defects-4.jpg'
-        }
-      }
-    },
+    // {
+    //   description: 'Fixed Defects',
+    //   data: {
+    //     provider: 'CONSTANT',
+    //     config: {
+    //       value: 4,
+    //       percentage: null
+    //     }
+    //   },
+    //   art: {
+    //     provider: 'CONSTANT',
+    //     config: {
+    //       artistName: 'Zeev Parush',
+    //       artworkName: 'Big Number Small Beetle',
+    //       artworkInfo: 'Photograph',
+    //       artworkYear: 2016,
+    //       imagePath: 'misc/defects-4.jpg'
+    //     }
+    //   }
+    // },
     // Real Data -------------------------------------------------------------------------------------------------------
     {
       description: 'Done Features',
