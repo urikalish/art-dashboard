@@ -9,7 +9,7 @@
           type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/work_items?query="subtype=%27feature%27"',
           fieldName: 'phase',
-          fieldValueId: 2358
+          fieldValueId: 4021
         }
       },
       art: {
@@ -24,7 +24,7 @@
           type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/work_items?query="subtype=%27story%27"',
           fieldName: 'phase',
-          fieldValueId: 2362
+          fieldValueId: 4025
         }
       },
       art: {
@@ -40,7 +40,7 @@
           url: '/work_items?query="subtype=%27story%27"',
           sumFieldName: 'story_points',
           fieldName: 'phase',
-          fieldValueId: 2362
+          fieldValueId: 4025
         }
       },
       art: {
@@ -55,7 +55,7 @@
           type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/defects',
           fieldName: 'phase',
-          fieldValueId: 2340
+          fieldValueId: 4003
         }
       },
       art: {
@@ -70,7 +70,7 @@
           type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
           url: '/defects',
           fieldName: 'severity',
-          fieldValueId: 3062
+          fieldValueId: 6006
         }
       },
       art: {

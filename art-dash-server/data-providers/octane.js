@@ -1,8 +1,12 @@
 (function(){
 
+  //https://hackathon.almoctane.com/api/shared_spaces/1001/workspaces/3001/work_items?query=%22subtype=%27feature%27%22
+  //https://hackathon.almoctane.com/api/shared_spaces/1001/workspaces/3001/work_items?query=%22subtype=%27story%27%22
+  //https://hackathon.almoctane.com/api/shared_spaces/1001/workspaces/3001/defects/
+
   const OCTANE_SERVER = 'https://hackathon.almoctane.com';
   const SHAREDSPACE_ID = 1001;
-  const WORKSPACE_ID = 2013;
+  const WORKSPACE_ID = 3001;
   const LOGIN_EVERY_NUM_OF_SECONDS = 300;
 
   var request = require('request');
@@ -34,8 +38,8 @@
       body: {
         // user: 'hackathon@user',
         // password: 'Mission-impossible'
-        client_id: 'Kalish_nkygenk7k5o8jigo9w663ev26',
-        client_secret: '@19b476b49bc6ae68I'
+        client_id: 'Kalish_yvqdzod98x4jdiweydg3x6g3o',
+        client_secret: '%34262139d850cf23S'
         /**
          * alternatively you can use API key like this
          * client_id: '', // put API KEY here
