@@ -7,7 +7,7 @@
     getArt: function getArt(config, data) {
       var art = {};
       art.artistName = 'Zeev Parush';
-      art.artworkName = 'Beatles';
+      art.artworkName = 'Beetles';
       art.artworkInfo = 'Photograph';
       art.artworkYear = 2016;
       var imgId;
@@ -24,7 +24,7 @@
       } else {
         imgId = 0;
       }
-      art.imagePath = 'beatles/b' + imgId + '.jpg';
+      art.imagePath = 'beetles/b' + imgId + '.jpg';
       return art;
     }
   }

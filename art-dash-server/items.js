@@ -210,7 +210,7 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
       }
     },
     {
@@ -223,7 +223,7 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
       }
     },
     {
@@ -236,7 +236,7 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
       }
     },
     {
@@ -249,7 +249,7 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
       }
     },
     {
@@ -262,7 +262,7 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
       }
     },
     {
@@ -275,7 +275,27 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
+      }
+    },
+    {
+      description: 'Fixed defects',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 4,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Zeev Parush',
+          artworkName: 'Big NUmber Small beatle',
+          artworkInfo: 'The Museum of Modern Art, New York',
+          artworkYear: 1889,
+          imagePath: 'van-gogh/vg2.jpg'
+        }
       }
     },
     // Real data -------------------------------------------------------------------------------------------------------
@@ -352,7 +372,7 @@
         }
       },
       art: {
-        provider: 'BEATLES'
+        provider: 'BEETLES'
       }
     },
     {
