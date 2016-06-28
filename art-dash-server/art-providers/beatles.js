@@ -24,7 +24,7 @@
       } else {
         imgId = 0;
       }
-      art.imagePath = 'beatles/beatles' + imgId + '.jpg';
+      art.imagePath = 'beatles/b' + imgId + '.jpg';
       return art;
     }
   }

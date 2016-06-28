@@ -4,6 +4,84 @@
     {
       description: 'Done features',
       data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 0
+        },
+        hidePercentage: true
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
+    {
+      description: 'Done features',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 1
+        },
+        hidePercentage: true
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
+    {
+      description: 'Done features',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 2
+        },
+        hidePercentage: true
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
+    {
+      description: 'Done features',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 3
+        },
+        hidePercentage: true
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
+    {
+      description: 'Done features',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 4
+        },
+        hidePercentage: true
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
+    {
+      description: 'Done features',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 5
+        },
+        hidePercentage: true
+      },
+      art: {
+        provider: 'COLOR_TUBES'
+      }
+    },
+    {
+      description: 'Done features',
+      data: {
         provider: 'OCTANE',
         config: {
           type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',

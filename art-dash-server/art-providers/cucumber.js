@@ -22,7 +22,7 @@
       } else {
         imgId = 1;
       }
-      art.imagePath = 'cucumber/cucumber' + imgId + '.jpg';
+      art.imagePath = 'cucumber/Q' + imgId + '.jpg';
       return art;
     }
   }
