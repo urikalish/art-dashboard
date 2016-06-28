@@ -6,19 +6,21 @@
     },
     getArt: function getArt(config, data) {
       var art = {};
-      art.artistName = 'Uri Kalish';
-      art.artworkName = 'Code Coverage';
+      art.artistName = 'Zeev Parush';
+      art.artworkName = 'Cups';
       art.artworkInfo = 'Photograph';
       art.artworkYear = 2016;
       var imgId;
       if (data.percentage >= 90) {
-        imgId = 'high';
+        imgId = '9';
       } else if (data.percentage >= 80) {
-        imgId = 'medium';
+        imgId = '8';
+      } else if (data.percentage >= 70) {
+        imgId = '7';
       } else {
-        imgId = 'low';
+        imgId = '6';
       }
-      art.imagePath = 'code-coverage/' + imgId + '.jpg';
+      art.imagePath = 'code-coverage/cc' + imgId + '.jpg';
       return art;
     }
   }

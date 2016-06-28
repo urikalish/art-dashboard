@@ -1,6 +1,7 @@
 (function() {
 
   exports.items = [
+    // Done features ---------------------------------------------------------------------------------------------------
     {
       description: 'Done features',
       data: {
@@ -94,67 +95,7 @@
         provider: 'AGILE'
       }
     },
-    {
-      description: 'Done stories',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27story%27"',
-          fieldName: 'phase',
-          fieldValueId: 4025
-        }
-      },
-      art: {
-        provider: 'AGILE'
-      }
-    },
-    {
-      description: 'Done story points',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'SUM_VALUE_BY_FIELD_VALUE_ID',
-          url: '/work_items?query="subtype=%27story%27"',
-          sumFieldName: 'story_points',
-          fieldName: 'phase',
-          fieldValueId: 4025
-        }
-      },
-      art: {
-        provider: 'AGILE'
-      }
-    },
-    {
-      description: 'Fixed defects',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/defects',
-          fieldName: 'phase',
-          fieldValueId: 4003
-        }
-      },
-      art: {
-        provider: 'AGILE'
-      }
-    },
-    {
-      description: 'Urgent defects',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/defects',
-          fieldName: 'severity',
-          fieldValueId: 6006
-        }
-      },
-      art: {
-        provider: 'BEATLES'
-      }
-    },
+    // Gherkin feature progress ----------------------------------------------------------------------------------------
     {
       description: 'Gherkin feature progress',
       data: {
@@ -220,6 +161,60 @@
         provider: 'CUCUMBER'
       }
     },
+    // Code coverage ---------------------------------------------------------------------------------------------------
+    {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 60
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 70
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 80
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    {
+      description: 'Code coverage',
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: 90
+        }
+      },
+      art: {
+        provider: 'CODE_COVERAGE'
+      }
+    },
+    // Urgent defects --------------------------------------------------------------------------------------------------
     {
       description: 'Urgent defects',
       data: {
@@ -298,43 +293,66 @@
         provider: 'BEATLES'
       }
     },
+    // Real data -------------------------------------------------------------------------------------------------------
     {
-      description: 'Code coverage',
+      description: 'Done stories',
       data: {
-        provider: 'CONSTANT',
+        provider: 'OCTANE',
         config: {
-          value: null,
-          percentage: 75
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27story%27"',
+          fieldName: 'phase',
+          fieldValueId: 4025
         }
       },
       art: {
-        provider: 'CODE_COVERAGE'
+        provider: 'AGILE'
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Done story points',
       data: {
-        provider: 'CONSTANT',
+        provider: 'OCTANE',
         config: {
-          value: null,
-          percentage: 85
+          type: 'SUM_VALUE_BY_FIELD_VALUE_ID',
+          url: '/work_items?query="subtype=%27story%27"',
+          sumFieldName: 'story_points',
+          fieldName: 'phase',
+          fieldValueId: 4025
         }
       },
       art: {
-        provider: 'CODE_COVERAGE'
+        provider: 'AGILE'
       }
     },
     {
-      description: 'Code coverage',
+      description: 'Fixed defects',
       data: {
-        provider: 'CONSTANT',
+        provider: 'OCTANE',
         config: {
-          value: null,
-          percentage: 95
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'phase',
+          fieldValueId: 4003
         }
       },
       art: {
-        provider: 'CODE_COVERAGE'
+        provider: 'AGILE'
+      }
+    },
+    {
+      description: 'Urgent defects',
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'severity',
+          fieldValueId: 6006
+        }
+      },
+      art: {
+        provider: 'BEATLES'
       }
     },
     {
