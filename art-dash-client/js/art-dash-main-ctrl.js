@@ -16,11 +16,13 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       $scope.model.imageSrc = artDashConstants.url.artBase + '/' + responseData.art.imagePath;
       $scope.model.artInfo = responseData.art.artistName + ' - "' + responseData.art.artworkName + '", ' + responseData.art.artworkYear;
       $scope.model.dataInfo = responseData.general.description;
-      if (responseData.data.value && responseData.data.percentage) {
+      var hasValue = responseData.data.value || responseData.data.value === 0;
+      var hasPercentage = responseData.data.percentage || responseData.data.percentage === 0;
+      if (hasValue && hasPercentage) {
         $scope.model.dataInfo += ': ' + responseData.data.value + ' (' + responseData.data.percentage + '%)';
-      } else if (responseData.data.value) {
+      } else if (hasValue) {
         $scope.model.dataInfo += ': ' + responseData.data.value;
-      } else if (responseData.data.percentage) {
+      } else if (hasPercentage) {
         $scope.model.dataInfo += ': ' + responseData.data.percentage + '%';
       }
       $scope.model.showArt = true;
