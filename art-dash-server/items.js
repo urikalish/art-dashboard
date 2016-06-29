@@ -453,9 +453,9 @@
         }
       }
     },
-    // Urgent Defects --------------------------------------------------------------------------------------------------
+    // High Defects --------------------------------------------------------------------------------------------------
     {
-      description: 'Urgent Defects: 15',
+      description: 'High Defects: 15',
       longDisplayDuration: true,
       hideValue: true,
       data: {
@@ -470,7 +470,7 @@
       }
     },
     {
-      description: 'Urgent Defects: 12',
+      description: 'High Defects: 12',
       hideValue: true,
       shortDisplayDuration: true,
       data: {
@@ -485,7 +485,7 @@
       }
     },
     {
-      description: 'Urgent Defects: 9',
+      description: 'High Defects: 9',
       hideValue: true,
       shortDisplayDuration: true,
       data: {
@@ -500,7 +500,7 @@
       }
     },
     {
-      description: 'Urgent Defects: 7',
+      description: 'High Defects: 7',
       hideValue: true,
       shortDisplayDuration: true,
       data: {
@@ -515,7 +515,7 @@
       }
     },
     {
-      description: 'Urgent Defects: 5',
+      description: 'High Defects: 5',
       hideValue: true,
       shortDisplayDuration: true,
       data: {
@@ -530,7 +530,7 @@
       }
     },
     {
-      description: 'Urgent Defects: 0',
+      description: 'High Defects: 0',
       hideValue: true,
       data: {
         provider: 'CONSTANT',
