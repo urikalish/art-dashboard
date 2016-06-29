@@ -46,20 +46,109 @@
         }
       }
     },
-    // Sprint Time-Line ------------------------------------------------------------------------------------------------
+    // Sprint Day ------------------------------------------------------------------------------------------------
     {
-      description: 'Sprint Time-Line',
-      hideValue: true,
+      description: 'Sprint Day',
       hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
-          value: 0,
-          percentage: 0
+          value: 1,
+          percentage: null
         }
       },
       art: {
-        provider: 'VAN_GOGH'
+        provider: 'TRAIN'
+      }
+    },
+    {
+      description: 'Sprint Day',
+      shortDisplayDuration: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 3,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'TRAIN'
+      }
+    },
+    {
+      description: 'Sprint Day',
+      shortDisplayDuration: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 5,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'TRAIN'
+      }
+    },
+    {
+      description: 'Sprint Day',
+      shortDisplayDuration: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 7,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'TRAIN'
+      }
+    },
+    {
+      description: 'Sprint Day',
+      shortDisplayDuration: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 9,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'TRAIN'
+      }
+    },
+    {
+      description: 'Sprint Day',
+      shortDisplayDuration: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 11,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'TRAIN'
+      }
+    },
+    {
+      description: 'Sprint Day',
+      shortDisplayDuration: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: 14,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'TRAIN'
       }
     },
     // Burn-Down Chart -------------------------------------------------------------------------------------------------
