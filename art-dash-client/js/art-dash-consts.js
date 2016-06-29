@@ -2,6 +2,7 @@ angular.module('artDashApp').factory('artDashConstants', function artDashConstan
 
   var protocol = 'http';
   var server = 'localhost';
+  //var server = 'kalish2.emea.hpqcorp.net';
   var port = 1618;
   var staticDir = 'art-dash';
   var artBase = protocol + '://' + server + ':' + port + '/' + staticDir + '/art';

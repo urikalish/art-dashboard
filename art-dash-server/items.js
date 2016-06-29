@@ -3,18 +3,47 @@
   exports.items = [
     // Sprint Status ---------------------------------------------------------------------------------------------------
     {
-      description: 'Sprint Status',
+      description: 'Sprint Status: Sunny',
       hideValue: true,
       hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
-          value: 0,
-          percentage: 0
+          value: null,
+          percentage: null
         }
       },
       art: {
-        provider: 'VAN_GOGH'
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Liam Baron',
+          artworkName: 'Summer',
+          artworkInfo: 'Painting',
+          artworkYear: 2016,
+          imagePath: 'misc/summer.jpg'
+        }
+      }
+    },
+    {
+      description: 'Sprint Status: Cloudy',
+      hideValue: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Liam Baron',
+          artworkName: 'Winter',
+          artworkInfo: 'Painting',
+          artworkYear: 2016,
+          imagePath: 'misc/winter.jpg'
+        }
       }
     },
     // Sprint Time-Line ------------------------------------------------------------------------------------------------
