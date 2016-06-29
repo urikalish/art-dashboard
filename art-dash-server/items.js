@@ -646,6 +646,7 @@
     {
       description: 'Urgent Defects',
       longDisplayDuration: true,
+      hidePercentage: true,
       data: {
         provider: 'OCTANE',
         config: {
