@@ -6,9 +6,9 @@
     },
     getArt: function getArt(config, data) {
       var art = {};
-      art.artistName = 'Zeev Parush';
-      art.artworkName = 'Cucumber';
-      art.artworkInfo = 'Photograph';
+      art.artistName = 'U. Kalish, Z. Parush';
+      art.artworkName = 'Obelisk Aspirations';
+      art.artworkInfo = 'Sliced cucumber';
       art.artworkYear = 2016;
       var imgId;
       if (data.percentage === 100) {

@@ -6,9 +6,9 @@
     },
     getArt: function getArt(config, data) {
       var art = {};
-      art.artistName = 'Zeev Parush';
-      art.artworkName = 'Color Tubes';
-      art.artworkInfo = 'Photograph';
+      art.artistName = 'Z. Parush';
+      art.artworkName = 'Code Crafting';
+      art.artworkInfo = 'Color tubes';
       art.artworkYear = 2016;
       var imgId;
       imgId = data.value;

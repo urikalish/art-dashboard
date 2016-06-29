@@ -6,9 +6,9 @@
     },
     getArt: function getArt(config, data) {
       var art = {};
-      art.artistName = 'Zeev Parush';
-      art.artworkName = 'Cups';
-      art.artworkInfo = 'Photograph';
+      art.artistName = 'U. Kalish, T. Cochavi, G. Brafman, Z. Parush';
+      art.artworkName = 'Take Cover!';
+      art.artworkInfo = 'Cups and crepe';
       art.artworkYear = 2016;
       var imgId;
       if (data.percentage >= 90) {

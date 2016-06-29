@@ -203,28 +203,6 @@
         provider: 'CUCUMBER'
       }
     },
-    // Done Story-Points -----------------------------------------------------------------------------------------------
-    // {
-    //   description: 'Done Story-Points',
-    //   data: {
-    //     provider: 'CONSTANT',
-    //     config: {
-    //       value: null,
-    //       percentage: 60
-    //     }
-    //   },
-    //   art: {
-    //     provider: 'CONSTANT',
-    //     config: {
-    //       artistName: 'Zeev Parush',
-    //       artworkName: 'Story points tower',
-    //       artworkInfo: 'Photograph',
-    //       artworkYear: 2016,
-    //       imagePath: 'misc/story-points-60.jpg'
-    //     }
-    //   }
-    // },
-    // Code Coverage ---------------------------------------------------------------------------------------------------
     {
       description: 'Code Coverage',
       data: {
@@ -295,9 +273,9 @@
       art: {
         provider: 'CONSTANT',
         config: {
-          artistName: 'Zeev Parush',
-          artworkName: 'Story points tower',
-          artworkInfo: 'Photograph',
+          artistName: 'T. Cochavi, Z. Parush',
+          artworkName: 'Five test runs walk into a bar...',
+          artworkInfo: 'Acrylic on paper',
           artworkYear: 2016,
           imagePath: 'misc/test-runs-status.jpg'
         }
@@ -460,9 +438,9 @@
       art: {
         provider: 'CONSTANT',
         config: {
-          artistName: 'Zeev Parush',
-          artworkName: 'Story points tower',
-          artworkInfo: 'Photograph',
+          artistName: 'G. Brafman, Z. Parush',
+          artworkName: 'Story Building',
+          artworkInfo: 'Jenga blocks',
           artworkYear: 2016,
           imagePath: 'misc/story-points-60.jpg'
         }
@@ -497,9 +475,9 @@
       art: {
         provider: 'CONSTANT',
         config: {
-          artistName: 'Zeev Parush',
-          artworkName: 'Big Number Small Beetle',
-          artworkInfo: 'Photograph',
+          artistName: 'U. Kalish, Z. Parush',
+          artworkName: 'Beetle on a Plastic Grass',
+          artworkInfo: 'Plastic rods',
           artworkYear: 2016,
           imagePath: 'misc/defects-4.jpg'
         }

@@ -6,9 +6,9 @@
     },
     getArt: function getArt(config, data) {
       var art = {};
-      art.artistName = 'Zeev Parush';
-      art.artworkName = 'Beetles';
-      art.artworkInfo = 'Photograph';
+      art.artistName = 'U. Kalish, T. Cochavi, G. Brafman, Z. Parush';
+      art.artworkName = 'Out of Their Element';
+      art.artworkInfo = 'Lego and wood';
       art.artworkYear = 2016;
       var imgId;
       if (data.value >= 10) {
