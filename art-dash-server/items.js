@@ -159,12 +159,19 @@
       data: {
         provider: 'CONSTANT',
         config: {
-          value: 0,
-          percentage: 0
+          value: null,
+          percentage: null
         }
       },
       art: {
-        provider: 'VAN_GOGH'
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'U. Kalish, T. Cochavi',
+          artworkName: 'Crash and Burn',
+          artworkInfo: 'Matches',
+          artworkYear: 2016,
+          imagePath: 'misc/burn-down-chart.jpg'
+        }
       }
     },
     // Done Features ---------------------------------------------------------------------------------------------------
