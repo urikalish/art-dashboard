@@ -6,7 +6,7 @@
     },
     getArt: function getArt(config, data) {
       var art = {};
-      art.artistName = 'A. Weisberg';
+      art.artistName = 'A. Weisberg, T. Cochavi, U. Kalish';
       art.artworkName = 'On Track';
       art.artworkInfo = 'Wood';
       art.artworkYear = 2016;
