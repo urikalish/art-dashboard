@@ -27,7 +27,7 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       }
       $scope.model.showArt = true;
       $scope.model.clientCounter++;
-      scheduleGetData(responseData.general.shortDisplay ? 2000 : 4000);
+      scheduleGetData(responseData.general.shortDisplay ? 2500 : 5000);
     }, 1000);
   }
 
