@@ -36,7 +36,7 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
         displayDuration = artDashConstants.displayDuration.NORMAL;
       }
       scheduleGetData(displayDuration);
-    }, 1250);
+    }, 1000);
   }
 
   $scope.model = {
