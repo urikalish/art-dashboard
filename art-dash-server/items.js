@@ -20,7 +20,7 @@
           artworkName: 'Summer',
           artworkInfo: 'Painting',
           artworkYear: 2016,
-          imagePath: 'misc/summer.jpg'
+          imagePath: 'liam-baron/summer.jpg'
         }
       }
     },
@@ -42,7 +42,51 @@
           artworkName: 'Winter',
           artworkInfo: 'Painting',
           artworkYear: 2016,
-          imagePath: 'misc/winter.jpg'
+          imagePath: 'liam-baron/winter.jpg'
+        }
+      }
+    },
+    {
+      description: 'Sprint Status: Sunny',
+      hideValue: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Daniel Hava, A. Weisberg',
+          artworkName: 'Summer',
+          artworkInfo: 'Painting',
+          artworkYear: 2016,
+          imagePath: 'daniel-hava/summer.jpg'
+        }
+      }
+    },
+    {
+      description: 'Sprint Status: Cloudy',
+      hideValue: true,
+      hidePercentage: true,
+      data: {
+        provider: 'CONSTANT',
+        config: {
+          value: null,
+          percentage: null
+        }
+      },
+      art: {
+        provider: 'CONSTANT',
+        config: {
+          artistName: 'Daniel Hava, A. Weisberg',
+          artworkName: 'Winter',
+          artworkInfo: 'Painting',
+          artworkYear: 2016,
+          imagePath: 'daniel-hava/winter.jpg'
         }
       }
     },
@@ -175,19 +219,19 @@
       }
     },
     // Done Features ---------------------------------------------------------------------------------------------------
-    {
-      description: 'Done Features',
-      hidePercentage: true,
-      data: {
-        provider: 'CONSTANT',
-        config: {
-          value: 0
-        }
-      },
-      art: {
-        provider: 'COLOR_TUBES'
-      }
-    },
+    // {
+    //   description: 'Done Features',
+    //   hidePercentage: true,
+    //   data: {
+    //     provider: 'CONSTANT',
+    //     config: {
+    //       value: 0
+    //     }
+    //   },
+    //   art: {
+    //     provider: 'COLOR_TUBES'
+    //   }
+    // },
     {
       description: 'Done Features',
       hidePercentage: true,
