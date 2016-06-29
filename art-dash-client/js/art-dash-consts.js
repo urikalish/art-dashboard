@@ -10,7 +10,7 @@ angular.module('artDashApp').factory('artDashConstants', function artDashConstan
 
   return {
     displayDuration: {
-      SHORT:              300,
+      SHORT:              3000,
       NORMAL:             6000,
       LONG:               9000
     },
