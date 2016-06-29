@@ -8,9 +8,14 @@ angular.module('artDashApp').factory('artDashConstants', function artDashConstan
   var apiBase = protocol + '://' + server + ':' + port + '/api';
 
   return {
+    displayDuration: {
+      SHORT:              2500,
+      NORMAL:             5000,
+      LONG:               10000
+    },
     url: {
-      artBase:            artBase,
-      apiBase:            apiBase
+      ART_BASE:           artBase,
+      API_BASE:           apiBase
     },
     ctrlId: {
       IMAGE:              'art-dash-image'

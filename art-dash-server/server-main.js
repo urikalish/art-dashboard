@@ -18,7 +18,7 @@ function afterGetData(context, data) {
 			clientCounter: context.clientCounter,
 			serverIndex: context.item.serverIndex,
 			description: context.item.description,
-			shortDisplay: context.item.shortDisplay
+			shortDisplayDuration: context.item.shortDisplayDuration
 		},
 		data: {
 			value: context.item.data.hideValue ? null : data.value,

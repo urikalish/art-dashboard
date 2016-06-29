@@ -52,7 +52,6 @@
     // Done Features ---------------------------------------------------------------------------------------------------
     {
       description: 'Done Features',
-      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -66,7 +65,7 @@
     },
     {
       description: 'Done Features',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -80,7 +79,7 @@
     },
     {
       description: 'Done Features',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -94,7 +93,7 @@
     },
     {
       description: 'Done Features',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -108,7 +107,7 @@
     },
     {
       description: 'Done Features',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -122,7 +121,7 @@
     },
     {
       description: 'Done Features',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -137,7 +136,6 @@
     // Gherkin Features Progress ---------------------------------------------------------------------------------------
     {
       description: 'Gherkin Features Progress',
-      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -151,7 +149,7 @@
     },
     {
       description: 'Gherkin Features Progress',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -165,7 +163,7 @@
     },
     {
       description: 'Gherkin Features Progress',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -179,7 +177,7 @@
     },
     {
       description: 'Gherkin Features Progress',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -193,7 +191,7 @@
     },
     {
       description: 'Gherkin Features Progress',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -229,7 +227,6 @@
     // Code Coverage ---------------------------------------------------------------------------------------------------
     {
       description: 'Code Coverage',
-      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -243,7 +240,7 @@
     },
     {
       description: 'Code Coverage',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -257,7 +254,7 @@
     },
     {
       description: 'Code Coverage',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -271,7 +268,7 @@
     },
     {
       description: 'Code Coverage',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -309,7 +306,6 @@
     // Urgent Defects --------------------------------------------------------------------------------------------------
     {
       description: 'Urgent Defects: 15',
-      shortDisplay: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -324,7 +320,7 @@
     },
     {
       description: 'Urgent Defects: 12',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -339,7 +335,7 @@
     },
     {
       description: 'Urgent Defects: 9',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -354,7 +350,7 @@
     },
     {
       description: 'Urgent Defects: 7',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -369,7 +365,7 @@
     },
     {
       description: 'Urgent Defects: 5',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -384,7 +380,7 @@
     },
     {
       description: 'Urgent Defects: 0',
-      shortDisplay: true,
+      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {

@@ -3,7 +3,7 @@ angular.module('artDashApp').factory('artDashCommServ', function artDashCommServ
   function sendServerRequest(clientCounter, callback) {
     var req = {
       method: 'POST',
-      url: artDashConstants.url.apiBase,
+      url: artDashConstants.url.API_BASE,
       headers : {'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'},
       data: $.param({clientCounter: clientCounter})
     };

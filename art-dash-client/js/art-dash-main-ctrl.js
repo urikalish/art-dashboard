@@ -13,11 +13,12 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
   function handleServerResponse(responseData) {
     $scope.model.showArt = false;
     $timeout(function() {
-      $scope.model.imageSrc = artDashConstants.url.artBase + '/' + responseData.art.imagePath;
+      var hasValue, hasPercentage, displayDuration;
+      $scope.model.imageSrc = artDashConstants.url.ART_BASE + '/' + responseData.art.imagePath;
       $scope.model.artInfo = responseData.art.artistName + ' - "' + responseData.art.artworkName + '", ' + responseData.art.artworkYear;
       $scope.model.dataInfo = responseData.general.description;
-      var hasValue = responseData.data.value || responseData.data.value === 0;
-      var hasPercentage = responseData.data.percentage || responseData.data.percentage === 0;
+      hasValue = responseData.data.value || responseData.data.value === 0;
+      hasPercentage = responseData.data.percentage || responseData.data.percentage === 0;
       if (hasValue && hasPercentage) {
         $scope.model.dataInfo += ': ' + responseData.data.value + ' (' + responseData.data.percentage + '%)';
       } else if (hasValue) {
@@ -27,7 +28,14 @@ angular.module('artDashApp').controller('artDashCtrl', function artDashCtrl($sco
       }
       $scope.model.showArt = true;
       $scope.model.clientCounter++;
-      scheduleGetData(responseData.general.shortDisplay ? 2500 : 5000);
+      if (responseData.general.shortDisplayDuration) {
+        displayDuration = artDashConstants.displayDuration.SHORT;
+      } else if (responseData.general.shortDisplayDuration) {
+        displayDuration = artDashConstants.displayDuration.LONG;
+      } else {
+        displayDuration = artDashConstants.displayDuration.NORMAL;
+      }
+      scheduleGetData(displayDuration);
     }, 1000);
   }
 
