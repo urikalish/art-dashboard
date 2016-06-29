@@ -10,9 +10,9 @@ angular.module('artDashApp').factory('artDashConstants', function artDashConstan
 
   return {
     displayDuration: {
-      SHORT:              2500,
-      NORMAL:             5000,
-      LONG:               10000
+      SHORT:              300,
+      NORMAL:             6000,
+      LONG:               9000
     },
     url: {
       ART_BASE:           artBase,
