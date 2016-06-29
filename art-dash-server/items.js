@@ -17,7 +17,7 @@
       art: {
         provider: 'CONSTANT',
         config: {
-          artistName: 'Daniel Hava, A. Weisberg',
+          artistName: 'Daniel Hava',
           artworkName: 'Summer',
           artworkInfo: 'Painting',
           artworkYear: 2016,
@@ -27,6 +27,7 @@
     },
     {
       description: 'Sprint Status: Cloudy',
+      longDisplayDuration: true,
       hideValue: true,
       hidePercentage: true,
       data: {
@@ -39,7 +40,7 @@
       art: {
         provider: 'CONSTANT',
         config: {
-          artistName: 'Daniel Hava, A. Weisberg',
+          artistName: 'Daniel Hava',
           artworkName: 'Winter',
           artworkInfo: 'Painting',
           artworkYear: 2016,
@@ -617,21 +618,6 @@
       }
     },
     {
-      description: 'Urgent Defects',
-      data: {
-        provider: 'OCTANE',
-        config: {
-          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
-          url: '/defects',
-          fieldName: 'severity',
-          fieldValueId: 6006
-        }
-      },
-      art: {
-        provider: 'BEETLES'
-      }
-    },
-    {
       description: 'Fixed Defects',
       data: {
         provider: 'OCTANE',
@@ -651,6 +637,22 @@
           artworkYear: 2016,
           imagePath: 'misc/defects-4.jpg'
         }
+      }
+    },
+    {
+      description: 'Urgent Defects',
+      longDisplayDuration: true,
+      data: {
+        provider: 'OCTANE',
+        config: {
+          type: 'COUNT_ENTITIES_BY_FIELD_VALUE_ID',
+          url: '/defects',
+          fieldName: 'severity',
+          fieldValueId: 6006
+        }
+      },
+      art: {
+        provider: 'BEETLES'
       }
     }
   ];
