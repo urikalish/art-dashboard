@@ -4,14 +4,14 @@
     // Sprint Status ---------------------------------------------------------------------------------------------------
     {
       description: 'Sprint Status',
+      hideValue: true,
+      hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 0,
           percentage: 0
-        },
-        hideValue: true,
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'VAN_GOGH'
@@ -20,14 +20,14 @@
     // Sprint Time-Line ------------------------------------------------------------------------------------------------
     {
       description: 'Sprint Time-Line',
+      hideValue: true,
+      hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 0,
           percentage: 0
-        },
-        hideValue: true,
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'VAN_GOGH'
@@ -36,14 +36,14 @@
     // Burn-Down Chart -------------------------------------------------------------------------------------------------
     {
       description: 'Burn-Down Chart',
+      hideValue: true,
+      hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 0,
           percentage: 0
-        },
-        hideValue: true,
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'VAN_GOGH'
@@ -52,12 +52,12 @@
     // Done Features ---------------------------------------------------------------------------------------------------
     {
       description: 'Done Features',
+      hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 0
-        },
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'COLOR_TUBES'
@@ -65,13 +65,13 @@
     },
     {
       description: 'Done Features',
+      hidePercentage: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 1
-        },
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'COLOR_TUBES'
@@ -79,13 +79,13 @@
     },
     {
       description: 'Done Features',
+      hidePercentage: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 2
-        },
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'COLOR_TUBES'
@@ -93,13 +93,13 @@
     },
     {
       description: 'Done Features',
+      hidePercentage: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 3
-        },
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'COLOR_TUBES'
@@ -107,13 +107,13 @@
     },
     {
       description: 'Done Features',
+      hidePercentage: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 4
-        },
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'COLOR_TUBES'
@@ -121,13 +121,13 @@
     },
     {
       description: 'Done Features',
+      hidePercentage: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 5
-        },
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'COLOR_TUBES'
@@ -283,14 +283,14 @@
     // Test Runs Status ------------------------------------------------------------------------------------------------
     {
       description: 'Test Runs Status',
+      hideValue: true,
+      hidePercentage: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: null,
           percentage: null
-        },
-        hideValue: true,
-        hidePercentage: true
+        }
       },
       art: {
         provider: 'CONSTANT',
@@ -306,13 +306,13 @@
     // Urgent Defects --------------------------------------------------------------------------------------------------
     {
       description: 'Urgent Defects: 15',
+      hideValue: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 10,
           percentage: null
-        },
-        hideValue: true
+        }
       },
       art: {
         provider: 'BEETLES'
@@ -320,14 +320,14 @@
     },
     {
       description: 'Urgent Defects: 12',
+      hideValue: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 8,
           percentage: null
-        },
-        hideValue: true
+        }
       },
       art: {
         provider: 'BEETLES'
@@ -335,14 +335,14 @@
     },
     {
       description: 'Urgent Defects: 9',
+      hideValue: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 6,
           percentage: null
-        },
-        hideValue: true
+        }
       },
       art: {
         provider: 'BEETLES'
@@ -350,14 +350,14 @@
     },
     {
       description: 'Urgent Defects: 7',
+      hideValue: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 4,
           percentage: null
-        },
-        hideValue: true
+        }
       },
       art: {
         provider: 'BEETLES'
@@ -365,14 +365,14 @@
     },
     {
       description: 'Urgent Defects: 5',
+      hideValue: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 2,
           percentage: null
-        },
-        hideValue: true
+        }
       },
       art: {
         provider: 'BEETLES'
@@ -380,14 +380,14 @@
     },
     {
       description: 'Urgent Defects: 0',
+      hideValue: true,
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
           value: 0,
           percentage: null
-        },
-        hideValue: true
+        }
       },
       art: {
         provider: 'BEETLES'

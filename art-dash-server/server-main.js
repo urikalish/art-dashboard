@@ -21,8 +21,8 @@ function afterGetData(context, data) {
 			shortDisplayDuration: context.item.shortDisplayDuration
 		},
 		data: {
-			value: context.item.data.hideValue ? null : data.value,
-			percentage: context.item.data.hidePercentage ? null : data.percentage
+			value: context.item.hideValue ? null : data.value,
+			percentage: context.item.hidePercentage ? null : data.percentage
 		},
 		art: {
 			artistName: art.artistName,
