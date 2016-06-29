@@ -27,7 +27,6 @@
     },
     {
       description: 'Sprint Status: Cloudy',
-      longDisplayDuration: true,
       hideValue: true,
       hidePercentage: true,
       data: {
@@ -50,6 +49,7 @@
     },
     {
       description: 'Sprint Status: Sunny',
+      longDisplayDuration: true,
       hideValue: true,
       hidePercentage: true,
       data: {
@@ -596,6 +596,7 @@
     // },
     {
       description: 'Done Story-Points',
+      longDisplayDuration: true,
       data: {
         provider: 'OCTANE',
         config: {
@@ -619,6 +620,7 @@
     },
     {
       description: 'Fixed Defects',
+      longDisplayDuration: true,
       data: {
         provider: 'OCTANE',
         config: {
