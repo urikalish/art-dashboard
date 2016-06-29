@@ -304,9 +304,9 @@
         provider: 'COLOR_TUBES'
       }
     },
-    // Gherkin Features Progress ---------------------------------------------------------------------------------------
+    // Gherkin Feature Progress ----------------------------------------------------------------------------------------
     {
-      description: 'Gherkin Features Progress',
+      description: 'Gherkin Feature Progress',
       longDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
@@ -320,7 +320,7 @@
       }
     },
     {
-      description: 'Gherkin Features Progress',
+      description: 'Gherkin Feature Progress',
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
@@ -334,7 +334,7 @@
       }
     },
     {
-      description: 'Gherkin Features Progress',
+      description: 'Gherkin Feature Progress',
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
@@ -348,7 +348,7 @@
       }
     },
     {
-      description: 'Gherkin Features Progress',
+      description: 'Gherkin Feature Progress',
       shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
@@ -362,7 +362,7 @@
       }
     },
     {
-      description: 'Gherkin Features Progress',
+      description: 'Gherkin Feature Progress',
       data: {
         provider: 'CONSTANT',
         config: {
