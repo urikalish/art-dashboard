@@ -95,6 +95,7 @@
     // Sprint Day ------------------------------------------------------------------------------------------------
     {
       description: 'Sprint Day',
+      longDisplayDuration: true,
       hidePercentage: true,
       data: {
         provider: 'CONSTANT',
@@ -200,6 +201,7 @@
     // Burn-Down Chart -------------------------------------------------------------------------------------------------
     {
       description: 'Burn-Down Chart',
+      longDisplayDuration: true,
       hideValue: true,
       hidePercentage: true,
       data: {
@@ -237,7 +239,6 @@
     {
       description: 'Done Features',
       hidePercentage: true,
-      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -293,7 +294,6 @@
     {
       description: 'Done Features',
       hidePercentage: true,
-      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -307,6 +307,7 @@
     // Gherkin Features Progress ---------------------------------------------------------------------------------------
     {
       description: 'Gherkin Features Progress',
+      longDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -362,7 +363,6 @@
     },
     {
       description: 'Gherkin Features Progress',
-      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -374,8 +374,10 @@
         provider: 'CUCUMBER'
       }
     },
+    // Code Coverage ---------------------------------------------------------------------------------------------------
     {
       description: 'Code Coverage',
+      longDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -417,7 +419,6 @@
     },
     {
       description: 'Code Coverage',
-      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -455,6 +456,7 @@
     // Urgent Defects --------------------------------------------------------------------------------------------------
     {
       description: 'Urgent Defects: 15',
+      longDisplayDuration: true,
       hideValue: true,
       data: {
         provider: 'CONSTANT',
@@ -530,7 +532,6 @@
     {
       description: 'Urgent Defects: 0',
       hideValue: true,
-      shortDisplayDuration: true,
       data: {
         provider: 'CONSTANT',
         config: {
@@ -566,6 +567,7 @@
     // Real Data -------------------------------------------------------------------------------------------------------
     {
       description: 'Done Features',
+      longDisplayDuration: true,
       data: {
         provider: 'OCTANE',
         config: {
