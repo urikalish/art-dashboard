@@ -20,6 +20,6 @@ run-ui
 
 ## Links
 
-- [movie](https://www.youtube.com/watch?v=OQ7arKTHXrM)
+- [movie](https://www.youtube.com/embed/OQ7arKTHXrM?vq=hd1440)
 - [art-dashboard on GitHub](https://github.com/urikalish/art-dashboard)
 - [art-dashboard on HPE GitHub](https://github.hpe.com/uri-kalish/art-dashboard)
