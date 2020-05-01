@@ -9,13 +9,17 @@
   ],
   "author": "Uri Kalish",
   "scripts": {
-    "start": "node art-dash-server/server-main.js"
+    "start": "node art-dash-server/server-main.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "express": "~4.13.4",
     "body-parser": "~1.15.1",
     "request": "~2.72.0",
     "cookie": "~0.2.3",
-    "request-debug": "~0.2.0"
-  }
+    "request-debug": "~0.2.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
