@@ -12,9 +12,9 @@
     "start": "node art-dash-server/server-main.js"
   },
   "dependencies": {
-    "express": "~4.13.4",
-    "body-parser": "~1.15.1",
-    "request": "~2.72.0",
+    "express": "~4.16.0",
+    "body-parser": "~1.18.2",
+    "request": "~2.87.0",
     "cookie": "~0.2.3",
     "request-debug": "~0.2.0"
   }
